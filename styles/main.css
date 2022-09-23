@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&family=VT323&display=swap');
 :root {
     /* pallet source https://coolors.co/7d7c7a-0b1d51-eaf6ff-ffd700 */
     --primary-color: #7D7C7A; /* Gray Web */
@@ -6,8 +7,8 @@
     --accent2-color: #FFD700; /* Gold Web Golden */
   
     /* change the values below to your chosen font(s) */
-    --heading-font: "Kaushan Script", cursive;
-    --paragraph-font: Arial, Helvetica, sans-serif;
+    --heading-font: 'Silkscreen', cursive;
+    --paragraph-font: 'VT323', monospace;
   }
 
   body {
@@ -19,6 +20,14 @@
   }
   h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
+    font-family: var(--heading-font);
+  }
+  p, ul, li, span {
+    font-family: var(--paragraph-font);
+  }
+
+  img {
+    max-width: 100%;
   }
 
   header {
