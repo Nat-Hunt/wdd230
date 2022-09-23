@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Silkscreen&family=VT323&display=swap');
+:root {
+    /* pallet source https://coolors.co/7d7c7a-0b1d51-eaf6ff-ffd700 */
+    --primary-color: #0A2032; 
+    --secondary-color: #3a4958;
+    --accent1-color: #EEEEEE;
+  
+    --heading-font: 'Rye', cursive;
+    --paragraph-font: 'VT323', monospace;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+  }
+  footer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  header, footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+  }
+  h1, h2 {
+    color: var(--accent1-color);
+  }
+  h1 {
+    margin-bottom: -10px;
+  }
+  p, ul, li, span {
+    font-family: var(--paragraph-font);
+  }
+
+  img {
+    max-width: 100%;
+  }
+  footer a, footer span {
+    color: var(--accent1-color)
+  }
+
+  .content {
+    background-color: var(--accent1-color);
+    width: 90%;
+    border:lightgray solid 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contentTitle {
+    background-color: var(--secondary-color);
+    margin: -10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    overflow: hidden;
+  }
