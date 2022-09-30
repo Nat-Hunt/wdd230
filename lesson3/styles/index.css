@@ -1,0 +1,125 @@
+:root {
+    --heading-font: georgia, serif;
+    --paragraph-font: arial, sans-serif;
+
+    /* coolors.co color pallet: https://coolors.co/a8d0db-e49273-a37a74-191716-0854a5 */
+    --primary-color: #A8D0DB;
+    --secondary-color: #04724D;
+    --accent-color-1: #ffffff;
+    --accent-color-2: #0854a5;
+
+    --paragraph-color: #191716;
+    --heading-color: #04724D; /* Secondary color*/
+    --paragraph-on-color: ; 
+    --heading-on-color: ;
+}
+html {
+    background-color: var(--primary-color);
+}
+header, main {
+    background-color: var(--primary-color);
+    border: 1px solid #191716;
+    border-radius: 5px 5px 5px 5px;
+}
+
+p {
+    color: var(--paragraph-color);
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+td {
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+    padding: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+header {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template: auto / 100px auto;
+    align-items: center;
+}
+#logo {
+    max-width: 100px;
+    grid-column: 1;
+}
+header h1 {
+    grid-column: 2;
+}
+header nav {
+    grid-column: 1 / -1;
+}
+
+.primary {
+    background-color: var(--accent-color-2);
+    list-style-type: none;
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 0;
+}
+.primary li {
+    padding: 10px;
+}
+.primaryNav {
+    color: var(--accent-color-1);
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+.primaryNav:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+table, th, td {
+    border:1px solid var(--accent-color-1);
+    border-collapse: collapse;
+}
+
+footer {
+    background-color: var(--accent-color-2);
+    display: grid;
+    grid-template: auto auto / auto;
+    align-items: center;
+    justify-items: center;
+}
+
+#year, #last-update {
+    color: var(--accent-color-1);
+}
+
+/* Tablet Views */
+@media only screen and (min-width: 37.5em) {
+    body {
+        display: grid;
+        grid-template-columns: .5fr 2fr .5fr;
+    }
+    header, main, footer {
+        grid-column: 2;
+    }
+    main {
+        padding-left: 5px;
+    }
+    .primary {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .primaryNav {
+        display: block;
+        padding: 10px;
+    }
+}
+/* Desktop Views */
+@media only screen and (min-width: 60em) {
+    .primary {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .primaryNav {
+        display: block;
+    }
+}
