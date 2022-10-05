@@ -1,0 +1,130 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+    --heading-font: georgia, serif;
+    --paragraph-font: arial, sans-serif;
+
+    /* coolors.co color pallet: https://coolors.co/a8d0db-e49273-a37a74-191716-0854a5 */
+    --primary-color: #A8D0DB;
+    --secondary-color: #04724D;
+    --accent-color-1: #ffffff;
+    --accent-color-2: #0854a5;
+
+    --paragraph-color: #191716;
+    --heading-color: #04724D; /* Secondary color*/
+    --paragraph-on-color: ; 
+    --heading-on-color: ;
+}
+
+/* Navigation Styles */
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #000;
+}
+nav {
+    grid-column: 1 / -1;
+    background-color: var(--accent-color-2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: var(--accent-color-1);
+    border-top: 1px solid rgba(0,0,0,.5);
+    font-family: var(var(--heading-font));
+}
+nav ul li.active a{
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,.3);
+}
+
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+/* Generic Styles */
+#date {
+    grid-column: 1 / -1;
+    font-family: var(--paragraph-font);
+    justify-self: center;
+}
+
+header, main {
+    background-color: var(--primary-color);
+    border: 1px solid #191716;
+    border-radius: 5px 5px 5px 5px;
+}
+
+p {
+    color: var(--paragraph-color);
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
+header {
+    font-family: var(--heading-font);
+    display: grid;
+    grid-template: auto / 100px auto;
+    align-items: center;
+}
+#logo {
+    max-width: 100px;
+    grid-column: 1;
+}
+header h1 {
+    grid-column: 2;
+}
+
+footer {
+    background-color: var(--accent-color-2);
+    display: grid;
+    grid-template: auto auto / 100px auto auto;
+    align-items: center;
+    justify-items: center;
+}
+#baseFooter {
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-items: center;
+}
+
+#year, #last-update {
+    color: var(--accent-color-1);
+}
+
+div.homeBlock {
+    border: 1px solid rgba(0,0,0,.3)
+}
+div.spotlight {
+    border: 1px solid rgba(0,0,0,.2)
+}
+
+
+
