@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
@@ -5,7 +7,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 :root {
-    --heading-font: georgia, serif;
+    --heading-font: 'Playball', cursive;
     --paragraph-font: arial, sans-serif;
 
     /* coolors.co color pallet: https://coolors.co/a8d0db-e49273-a37a74-191716-0854a5 */
@@ -16,21 +18,19 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
     --paragraph-color: #191716;
     --heading-color: #04724D; /* Secondary color*/
-    --paragraph-on-color: ; 
-    --heading-on-color: ;
 }
 
 /* Navigation Styles */
+nav {
+    grid-column: 1 / -1;
+    background-color: var(--accent-color-2);
+}
 nav button {
     margin: .2rem 2vw;
     background: transparent;
     border: none;
     font-size: 2rem;
     color: #000;
-}
-nav {
-    grid-column: 1 / -1;
-    background-color: var(--accent-color-2);
 }
 
 nav ul {
@@ -59,39 +59,35 @@ nav ul li a:hover {
 nav ul {display: none;}
 nav ul.open {display: block;}
 
-#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    text-align: start;
+}
+#hamburgerBtn:
+
+#hamburgerBtn span:nth-child(1) {display: flex;}
 #hamburgerBtn span:nth-child(2) {display: none;}
 
 
 #hamburgerBtn.open span:nth-child(1) {display: none;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
-/* Generic Styles */
+/* Header Styles */
 #date {
     grid-column: 1 / -1;
     font-family: var(--paragraph-font);
     justify-self: center;
 }
 
-header, main {
+header {
     background-color: var(--primary-color);
     border: 1px solid #191716;
     border-radius: 5px 5px 5px 5px;
-}
-
-p {
-    color: var(--paragraph-color);
-    font-family: var(--paragraph-font);
-    font-size: 16px;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--heading-color);
-}
-header {
     font-family: var(--heading-font);
     display: grid;
-    grid-template: auto / 100px auto;
+    grid-template: auto / 100px auto auto auto;
     align-items: center;
 }
 #logo {
@@ -101,7 +97,31 @@ header {
 header h1 {
     grid-column: 2;
 }
+header section {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: end;
+}
+/* Generic Styles */
+p {
+    color: var(--paragraph-color);
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+}
 
+address {
+    color: var(--paragraph-color);
+}
+a.linkOnColor {
+    color: var(--paragraph-color);
+}
+
+
+/* Footer Styles */
 footer {
     background-color: var(--accent-color-2);
     display: grid;
@@ -114,9 +134,18 @@ footer {
     align-items: center;
     justify-items: center;
 }
-
+div#address {
+    justify-self: start;
+}
 #year, #last-update {
     color: var(--accent-color-1);
+}
+
+/* Main styles */
+main {
+    background-color: var(--primary-color);
+    border: 1px solid #191716;
+    border-radius: 5px 5px 5px 5px;
 }
 
 div.homeBlock {
@@ -125,6 +154,3 @@ div.homeBlock {
 div.spotlight {
     border: 1px solid rgba(0,0,0,.2)
 }
-
-
-

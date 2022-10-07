@@ -15,12 +15,25 @@
     <link href="css/base.css" rel="stylesheet" />
     <link href="css/medium.css" rel="stylesheet" />
     <link href="css/large.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/f4f3719e6e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <img src="images/chamber-of-commerce-logo.png" alt="logo" id="logo" />
       <h1>Tallassee Chamber of Commerce</h1>
-      <span id="date"></span>
+      <section>
+        <a href="https://www.facebook.com/tallasseechamber/" target="_blank"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/tallassee-chamber-of-commerce/about/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+      </section>
       <nav>
         <button id="hamburgerBtn">
           <span>&#9776; Menu</span><span>X Close</span>
@@ -30,10 +43,9 @@
           <li><a href="#">page 2</a></li>
           <li><a href="#">page 3</a></li>
           <li><a href="#">page 4</a></li>
-          <li><a href="#">social media 1</a></li>
-          <li><a href="#">social media 2</a></li>
         </ul>
       </nav>
+      <span id="date"></span>
     </header>
     <main>
       <div class="homeBlock" id="hero">
@@ -51,15 +63,22 @@
     </main>
     <footer>
       <img src="images/chamber-of-commerce-logo.png" alt="logo" id="logo" />
-      <div>
-        <p>Tallassee Chamber of Commerce</p>
-        <span>123 something street</span><br />
-        <span>Tallassee, AL, 36078</span>
+      <div id="address">
+        <address>Tallassee Chamber of Commerce</address>
+        <address>303 Barnett Blvd,</address>
+        <address>Tallassee, AL 36078</address>
       </div>
       <div>
-        <p>info@fictionalemail.org</p>
-        <a href="tel:3344567890">(334) 456-7890</a><br />
-        <a href="#">Link to Map!</a>
+        <a href="mailto:info@fictionalemail.org" class="linkOnColor"
+          >info@fictionalemail.org</a
+        ><br />
+        <a href="tel:3342835151" class="linkOnColor">(334) 283-5151</a><br />
+        <a
+          href="https://goo.gl/maps/JDCBQgtfukNeMFHb9"
+          target="_blank"
+          class="linkOnColor"
+          ><i class="fas fa-map-marker-alt"></i> Our Location</a
+        >
       </div>
       <div id="baseFooter">
         <span id="year"></span>
