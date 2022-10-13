@@ -1,6 +1,6 @@
 const currentDate = new Date();
 const copyright = "&copy ";
-const author = " .:|:. Nathan T. Hunt .:|:. Alabama";
+const author = " | Nathan T. Hunt | Alabama";
 document.querySelector("#year").innerHTML = copyright.concat(
   currentDate.getFullYear(),
   author
