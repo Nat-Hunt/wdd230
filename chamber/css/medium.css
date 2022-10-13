@@ -1,4 +1,10 @@
 @media only screen and (min-width: 35rem){
+    /* dynamic content hiding/displaying */
+    div#join {
+        display: block;
+    }
+
+    
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -17,7 +23,7 @@
     }
     #spotlight {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     #spotlight div:first-child {
         margin-left: 10px;

@@ -19,6 +19,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     --paragraph-color: #191716;
     --heading-color: #04724D; /* Secondary color*/
 }
+/* dynamic content hiding/displaying */
+div#join {
+    display: none;
+}
+div#spotlight div.spotlight:nth-child(3){
+    display: none;
+}
 
 /* Navigation Styles */
 nav {
@@ -80,10 +87,18 @@ nav ul.open {display: block;}
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
 /* Header Styles */
+#banner {
+    display: none;
+}
+#banner.itsMondayOrTuesday {
+    display: block;
+    grid-column: 1 / -1
+}
 #date {
     grid-column: 1 / -1;
     font-family: var(--paragraph-font);
     justify-self: center;
+    padding: 1rem;
 }
 
 header {
@@ -109,7 +124,7 @@ header section {
 }
 
 /* Generic Styles */
-p {
+p, li, section {
     color: var(--paragraph-color);
     font-family: var(--paragraph-font);
     font-size: 16px;
@@ -156,10 +171,63 @@ main {
     border: 1px solid #191716;
     border-radius: 5px 5px 5px 5px;
 }
-
+/* banner image with call to action*/
+#hero {
+    position: relative;
+}
+#bannerImg {
+    max-width: 100%;
+}
+#welcome {
+    position: absolute;
+    left: 1rem
+}
+#welcome h2, #welcome h3 {
+    color: var(--paragraph-color);
+    text-shadow: 3px 3px 3px rgba(168, 208, 219, .5);
+}
+#actionCall {
+    text-decoration: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color-2);
+    border-radius: 1.5rem;
+    padding: .5rem;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 30px var(--secondary-color)
+}
+/* Weather block*/
+/* generic blocks of content*/
 div.homeBlock {
-    border: 1px solid rgba(0,0,0,.3)
+    border: 1px solid rgba(0,0,0,.3);
+    background-color: rgba(4, 114, 77, .5);
+}
+div.homeBlock p, div.homeBlock h2, div.homeBlock h3 {
+    color: var(--paragraph-color);
 }
 div.spotlight {
-    border: 1px solid rgba(0,0,0,.2)
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: rgba(4, 114, 77, .7);
+}
+.companyLogo {
+    max-width: 200px;
+}
+#moreInfo {
+    text-decoration: none;
+}
+/* Join Us Block */
+#join-us {
+    width: 100%;
+    font-family: var(--paragraph-font);
+    background-color: var(--accent-color-2);
+    color: var(--accent-color-1);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--accent-color-2);
+    box-shadow: 0 0 30px var(--secondary-color)
+}
+#join-us:hover {
+    cursor: pointer;
 }

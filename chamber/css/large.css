@@ -1,4 +1,8 @@
 @media only screen and (min-width: 64rem){
+   div#spotlight div.spotlight:nth-child(3){
+      display: block;
+   }
+
    #hamburgerBtn {display: none;}
 
    nav ul#primaryNav {
@@ -10,10 +14,14 @@
        border: none;
        border-right: 1px solid rgba(0,0,0,0.3);
    }
-   
    nav ul li a {
       padding: .5rem 1rem;
    }
+   #date {
+      padding: .5rem;
+   }
+
+
    main {
       grid-template-columns: 1fr 2fr 1fr;
    }

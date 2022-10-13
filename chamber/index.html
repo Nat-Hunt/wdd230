@@ -23,6 +23,9 @@
   </head>
   <body>
     <header>
+      <p id="banner">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+      </p>
       <img
         src="images/chamber-of-commerce-header.png"
         alt="logo"
@@ -49,25 +52,127 @@
         </button>
         <ul id="primaryNav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">page 2</a></li>
-          <li><a href="#">page 3</a></li>
-          <li><a href="#">page 4</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <span id="date"></span>
     </header>
     <main>
       <div class="homeBlock" id="hero">
-        <p>Hero with site name and call to action</p>
+        <div id="welcome">
+          <h2>Welcome to Tallassee</h2>
+          <h3>The Treasure on the Tallapoosa</h3>
+        </div>
+        <img
+          src="./images/treasure-on-the-tallapoosa.jpg"
+          alt="old mills bridge"
+          id="bannerImg"
+        />
+        <a href="#" id="actionCall">Join the Chamber</a>
       </div>
-      <div class="homeBlock" id="event"><p>Event</p></div>
-      <div class="homeBlock" id="weather"><p>Weather</p></div>
-      <div class="homeBlock" id="join"><p>Join</p></div>
-      <div class="homeBlock" id="news"><p>News Release</p></div>
+      <div class="homeBlock" id="event">
+        <h2>Fallfest</h2>
+        <h3>City Hall</h3>
+        <p>
+          Join us for a celebration of the fall season here at Tallassee City
+          Hall, Saturday October 15 from 8:00 am to 1:00 pm
+          <a href="https://tallasseechamber.com/event/fallfest/" id="moreInfo"
+            >more info</a
+          >
+        </p>
+      </div>
+      <div class="homeBlock" id="weather">
+        <h2>Weather</h2>
+        <i class="fa-solid fa-cloud fa-5x"></i>
+        <p>Cloudy</p>
+        <table>
+          <tr>
+            <td>Wind Speed</td>
+            <td>2.5 km/h</td>
+          </tr>
+          <tr>
+            <td>Wind Chill</td>
+            <td>N/A</td>
+          </tr>
+        </table>
+      </div>
+      <div class="homeBlock" id="join">
+        <button id="join-us">Join Us!</button>
+        <p>
+          Discover how to join the chamber of commerce and how it will benefit
+          your organization!
+        </p>
+      </div>
+      <div class="homeBlock" id="news">
+        <h2>News Release</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit primis
+          pulvinar, et venenatis tortor porta himenaeos faucibus class pretium
+          accumsan, bibendum inceptos magnis nostra vitae libero nibh taciti.
+          Accumsan ultrices sollicitudin morbi ullamcorper amet volutpat
+          lobortis tortor orci, mattis quis habitasse platea pulvinar facilisis
+          in ut commodo, parturient ridiculus odio lacinia tempor velit a
+          vivamus. Magnis viverra diam curae augue quis cum ipsum interdum
+          suscipit, sagittis ad ridiculus et magna commodo bibendum facilisis,
+          lacus velit sodales adipiscing habitasse aptent molestie fusce.
+        </p>
+      </div>
       <div class="homeBlock" id="spotlight">
-        <div class="spotlight"><p>spotlight 1</p></div>
-        <div class="spotlight"><p>spotlight 2</p></div>
-        <div class="spotlight"><p>spotlight 2</p></div>
+        <div class="spotlight">
+          <h2>Dottie's Childcare</h2>
+          <!-- <img
+            src="./images/dotties-childcare.jpg"
+            alt="company name - logo"
+            class="companyLogo"
+          /> -->
+          <i class="fa-solid fa-hands-holding-child fa-5x"></i>
+          <p>Daycare cattering to infants through elementary school</p>
+          <hr />
+          <address>
+            <a href="mailto:dottieschildcare@elmore.rr.com"
+              >dottieschildcare@elmore.rr.com</a
+            >
+          </address>
+          <address>
+            <a href="tel:3342832885">+334-283-2885</a>
+            <a href="https://www.facebook.com/profile.php?id=100057422081364"
+              >website</a
+            >
+          </address>
+        </div>
+        <div class="spotlight">
+          <h2>Godwin's Flowers</h2>
+          <!-- <img src="./images/" alt="company name - logo" class="companyLogo" /> -->
+          <i class="fa-solid fa-store fa-5x"></i>
+          <p>
+            "Flowers with a personal touch" Serving Tallassee for over 43 years
+          </p>
+          <hr />
+          <address>
+            <a href="mailto:info@godwinsflowersal.com"
+              >info@godwinsflowersal.com</a
+            >
+          </address>
+          <address>
+            <a href="tel:3342832160">+334-283-2160</a>
+            <a href="https://www.godwinsflowersal.net/">website</a>
+          </address>
+        </div>
+        <div class="spotlight">
+          <h2>GKN Aerospace - Special Products Group</h2>
+          <!-- <img src="./images/" alt="company name - logo" class="companyLogo" /> -->
+          <i class="fa-solid fa-plane fa-5x"></i>
+          <p>The world's leading multi-tech tier 1 aerospace supplier.</p>
+          <hr />
+          <address>info@gkn.com</address>
+          <address>
+            <a href="tel:3342520095">+334-252-0095</a>
+            <a href="https://gkn.com/">website</a>
+          </address>
+        </div>
       </div>
     </main>
     <footer>
@@ -98,6 +203,7 @@
         <span id="last-update"></span>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="./js/fill-footer.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

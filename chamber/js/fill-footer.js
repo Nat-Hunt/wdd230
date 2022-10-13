@@ -1,3 +1,5 @@
+"use strict";
+// fill in the base footer
 const today = new Date();
 const longDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
   today
