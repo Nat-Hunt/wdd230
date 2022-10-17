@@ -20,7 +20,9 @@
    #date {
       padding: .5rem;
    }
-
+   #bannerImg{
+      max-width: 100%;
+   }
 
    main {
       grid-template-columns: 1fr 2fr 1fr;

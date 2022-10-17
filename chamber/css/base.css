@@ -107,11 +107,11 @@ header {
     border-radius: 5px 5px 5px 5px;
     font-family: var(--heading-font);
     display: grid;
-    grid-template: auto / 200px auto auto auto;
+    grid-template: auto / auto auto auto auto;
     align-items: center;
 }
 .logo {
-    max-width: 200px;
+    max-width: 100px;
     grid-column: 1;
 }
 header h1 {
@@ -145,10 +145,6 @@ a.linkOnColor {
 /* Footer Styles */
 footer {
     background-color: var(--accent-color-2);
-    display: grid;
-    grid-template: auto auto / 200px auto auto;
-    align-items: center;
-    justify-items: center;
 }
 #baseFooter {
     grid-column: 1 / -1;
@@ -199,6 +195,15 @@ main {
     box-shadow: 0 0 30px var(--secondary-color)
 }
 /* Weather block*/
+div#weather {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+}
+div#weather h2, div#weather #weatherType, div#weather .wind  {
+    grid-column: 1 / -1;
+}
 /* generic blocks of content*/
 div.homeBlock {
     border: 1px solid rgba(0,0,0,.3);

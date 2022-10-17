@@ -66,11 +66,23 @@
           <h2>Welcome to Tallassee</h2>
           <h3>The Treasure on the Tallapoosa</h3>
         </div>
-        <img
+        <picture id="bannerImg">
+          <source
+            media="(min-width: 35rem) and (max-width: 86.2rem)"
+            srcset="./images/wdd230-org_2_50.jpg"
+          />
+          <source
+            media="(min-width: 86.25rem)"
+            srcset="./images/wdd230-org_75.jpg"
+            max-width="1000"
+          />
+          <img src="./images/wdd230-org_1_25.jpg" />
+        </picture>
+        <!-- <img
           src="./images/treasure-on-the-tallapoosa.jpg"
           alt="old mills bridge"
           id="bannerImg"
-        />
+        /> -->
         <a href="#" id="actionCall">Join the Chamber</a>
       </div>
       <div class="homeBlock" id="event">
@@ -87,17 +99,10 @@
       <div class="homeBlock" id="weather">
         <h2>Weather</h2>
         <i class="fa-solid fa-cloud fa-5x"></i>
-        <p>Cloudy</p>
-        <table>
-          <tr>
-            <td>Wind Speed</td>
-            <td>2.5 km/h</td>
-          </tr>
-          <tr>
-            <td>Wind Chill</td>
-            <td>N/A</td>
-          </tr>
-        </table>
+        <p class="weather"><span class="weather" id="temp">35</span>&#8457;</p>
+        <p id="weatherType">Cloudy</p>
+        <p class="wind">Wind Speed: <span id="windSpeed">5</span> mi/h</p>
+        <p class="wind">Wind Chill: <span id="windChill"></span></p>
       </div>
       <div class="homeBlock" id="join">
         <button id="join-us">Join Us!</button>
@@ -123,11 +128,6 @@
       <div class="homeBlock" id="spotlight">
         <div class="spotlight">
           <h2>Dottie's Childcare</h2>
-          <!-- <img
-            src="./images/dotties-childcare.jpg"
-            alt="company name - logo"
-            class="companyLogo"
-          /> -->
           <i class="fa-solid fa-hands-holding-child fa-5x"></i>
           <p>Daycare cattering to infants through elementary school</p>
           <hr />
@@ -145,7 +145,6 @@
         </div>
         <div class="spotlight">
           <h2>Godwin's Flowers</h2>
-          <!-- <img src="./images/" alt="company name - logo" class="companyLogo" /> -->
           <i class="fa-solid fa-store fa-5x"></i>
           <p>
             "Flowers with a personal touch" Serving Tallassee for over 43 years
@@ -205,5 +204,6 @@
     </footer>
     <script src="./js/fill-footer.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/windchill.js"></script>
   </body>
 </html>
