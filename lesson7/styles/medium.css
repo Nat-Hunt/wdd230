@@ -1,0 +1,19 @@
+@media only screen and (max-width: 32.5em) {
+      
+    main {
+        display: block;
+    }
+    ul, li {
+        font-size: 1.1em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 2em;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+}
