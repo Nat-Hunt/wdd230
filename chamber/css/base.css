@@ -173,6 +173,8 @@ main {
 }
 #bannerImg {
     max-width: 100%;
+    justify-self: center;
+    align-self: center;
 }
 #welcome {
     position: absolute;
