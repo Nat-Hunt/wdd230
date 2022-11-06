@@ -27,24 +27,31 @@
    main {
       grid-template-columns: 1fr 2fr 1fr;
    }
+
+   .leftColumn {
+      grid-column: 1 / 2;
+   }
+   .entireRightColumn {
+      grid-column: 3 / 4;
+   }
+   .middleColumn{ 
+      grid-column: 2 / 3
+   } 
+
+   
    #hero{
-      grid-column: 2 / 3;
       grid-row: 1 / 3;
    }
    #event{
-      grid-column: 1 / 2;
       grid-row: 1;
    }
    #weather{
-      grid-column: 1 / 2;
       grid-row: 2;
    }
    #join{
-      grid-column: 1 / 2;
       grid-row: 3;
    }
    #news{
-      grid-column: 2 / 3;
       grid-row: 3;
    }
    #spotlight{

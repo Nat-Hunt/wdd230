@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="description" content="Statistics and sights around Tallassee" />
+    <meta name="author" content="Nathan Hunt" />
+
+    <title>Chamber of Commerce</title>
+    <!-- links -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/f4f3719e6e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/fill-footer.js" defer></script>
+    <script src="./js/daysSince.js" defer></script>
+    <script src="./js/lazyload.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/chamber-of-commerce-header.png"
+        alt="logo"
+        class="logo"
+      />
+      <h1>Tallassee Chamber of Commerce</h1>
+      <section>
+        <a
+          href="https://www.facebook.com/tallasseechamber/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/tallassee-chamber-of-commerce/about/"
+          target="_blank"
+          aria-label="Linkedin"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+      </section>
+      <nav>
+        <button id="hamburgerBtn">
+          <span>&#9776; Menu</span><span>X Close</span>
+        </button>
+        <ul id="primaryNav">
+          <li><a href="./index.html">Home</a></li>
+          <li class="active"><a href="./discover.html">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <span id="date"></span>
+      <p id="daysSinceLastVisit" class="banner">Lorem Ipsun</p>
+    </header>
+
+    <main>
+      <div id="leftCarosel" class="homeBlock leftColumn">
+        <section>
+          <img
+            src="./images/300x400_placeholder.png"
+            data-src=".\images\Hotel_Talisi_Oct10_01.jpg"
+            alt="Hotel Talisi in Tallassee"
+            width="400px"
+            id="lazyLoad1"
+            loading="lazy"
+          />
+          <br />
+          <label for="lazyLoad1"
+            >Historic Hotel Talisi
+            <a href="https://en.wikipedia.org/wiki/Hotel_Talisi"
+              >learn more</a
+            ></label
+          >
+        </section>
+
+        <section>
+          <img
+            src="./images/300x400_placeholder.png"
+            data-src="./images/thurlow-dam2.webp"
+            alt="Thurlow Dam"
+            width="400px"
+            id="lazyLoad4"
+            loading="lazy"
+          />
+          <img
+            src="./images/300x400_placeholder.png"
+            data-src=".\images\thurlow.jpg"
+            alt="Thurlow Dam"
+            width="400px"
+            id="lazyLoad3"
+            loading="lazy"
+          />
+          <br />
+          <label for="lazyLoad3"
+            >Thurlow Dam, Alabama Power Company
+            <a href="https://tallasseetimes.com/news_article_3e4.htm"
+              >learn more</a
+            ></label
+          >
+        </section>
+      </div>
+      <div id="stats" class="homeBlock middleColumn">
+        <h2>Tallassee Statistics</h2>
+        <ul>
+          <li>Population in 2019: 4,502 (81% urban, 19% rural).</li>
+          <li>Population change since 2000: -8.8%</li>
+          <li>Males: 1,795 (39.9%)</li>
+          <li>Females: 2,707 (60.1%)</li>
+          <li>Median resident age: 35.7 years</li>
+          <li>Alabama median age: 39.4 years</li>
+          <li>Zip codes: 36078</li>
+          <li>
+            Estimated median household income in 2019: $49,278 (it was $23,946
+            in 2000)
+          </li>
+          <li>Tallassee: $49,278</li>
+          <li>AL: $51,734</li>
+          <li>
+            Estimated per capita income in 2019: $24,644 (it was $14,859 in
+            2000)
+          </li>
+          <li>
+            Estimated median house or condo value in 2019: $142,275 (it was
+            $56,400 in 2000)
+          </li>
+          <li>Tallassee: $142,275</li>
+          <li>AL: $154,000</li>
+          <li>
+            Mean prices in 2019: all housing units: $175,708; detached houses:
+            $184,487; mobile homes: $35,273
+          </li>
+          <li>Median gross rent in 2019: $738</li>
+          <li>
+            March 2019 cost of living index in Tallassee: 84.2 (less than
+            average, U.S. average is 100)
+          </li>
+          <li>Percentage of residents living in poverty in 2019: 20.7%</li>
+          <li>
+            (18.1% for White Non-Hispanic residents, 28.3% for Black residents,
+            45.1% for Hispanic or Latino residents)
+          </li>
+        </ul>
+      </div>
+      <div id="imageCarosel" class="homeBlock entireRightColumn">
+        <img
+          src="./images/300x400_placeholder.png"
+          data-src=".\images\Tallassee-Mill.webp"
+          alt="old drawing of the Tallassee Mills"
+          width="400px"
+          id="lazyLoad2"
+          loading="lazy"
+        />
+        <img
+          src="./images/300x400_placeholder.png"
+          data-src="./images/Tallassee_Mills_Oct10_06.jpg"
+          alt="Thurlow Dam"
+          width="400px"
+          id="lazyLoad5"
+          loading="lazy"
+        />
+        <br />
+        <label for="lazyLoad5"
+          >The Tallassee Mills
+          <a
+            href="https://www.abandonedalabama.com/tallassee-mills/#20000_Burglary"
+            >learn more</a
+          ></label
+        >
+      </div>
+    </main>
+
+    <footer>
+      <img
+        src="images/chamber-of-commerce-footer.png"
+        alt="logo"
+        class="logo"
+      />
+      <div id="address">
+        <address>Tallassee Chamber of Commerce</address>
+        <address>303 Barnett Blvd,</address>
+        <address>Tallassee, AL 36078</address>
+      </div>
+      <div>
+        <a href="mailto:info@fictionalemail.org" class="linkOnColor"
+          >info@fictionalemail.org</a
+        ><br />
+        <a href="tel:3342835151" class="linkOnColor">(334) 283-5151</a><br />
+        <a
+          href="https://goo.gl/maps/JDCBQgtfukNeMFHb9"
+          target="_blank"
+          class="linkOnColor"
+          ><i class="fas fa-map-marker-alt"></i> Our Location</a
+        >
+      </div>
+      <div id="baseFooter">
+        <span id="year"></span>
+        <span id="last-update"></span>
+      </div>
+    </footer>
+  </body>
+</html>

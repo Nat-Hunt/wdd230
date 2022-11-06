@@ -90,9 +90,10 @@ nav ul.open {display: block;}
 #banner {
     display: none;
 }
-#banner.itsMondayOrTuesday {
+.banner {
     display: block;
-    grid-column: 1 / -1
+    grid-column: 1 / -1;
+    justify-self: center;
 }
 #date {
     grid-column: 1 / -1;
@@ -221,7 +222,7 @@ div.spotlight {
 .companyLogo {
     max-width: 200px;
 }
-#moreInfo {
+.moreInfo {
     text-decoration: none;
 }
 /* Join Us Block */
