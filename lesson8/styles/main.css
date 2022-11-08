@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Silkscreen&family=VT323&display=swap');
+:root {
+    /* pallet source https://coolors.co/7d7c7a-0b1d51-eaf6ff-ffd700 */
+    --primary-color: #7D7C7A; /* Gray Web */
+    --secondary-color: #0B1D51; /* Royal Blue Dark */
+    --accent1-color: #EAF6FF; /* Alice Blue */
+    --accent2-color: #FFD700; /* Gold Web Golden */
+  
+    --heading-font: 'Rye', cursive;
+    --paragraph-font: 'VT323', monospace;
+  }
+
+  body {
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+  }
+  p, ul, li, span {
+    font-family: var(--paragraph-font);
+  }
+
+  img[data-src] {
+    filter: blur(0.1em);
+  }
+  img {
+    max-width: 100%;
+    display: flex;
+    margin: 10px;
+    filter: blur(0em);
+    transition: filter 1s;
+  }
+
+  header {
+    grid-column: 2 / 3;
+    width: 100%;
+    border-radius: 12.5px;
+    padding: 25px;
+    background-color: var(--secondary-color);
+  }
+  header h1, header h2, header h3, header h4, header h5, header h6 {
+    color: var(--primary-color);
+  }
+
+  footer {
+    grid-column: 2 / 3;
+    width: 100%;
+    border-radius: 12.5px;
+    padding: 12.5px;
+    background-color: var(--secondary-color);
+  }
+  footer a {
+    color: var(--primary-color);
+  }
+  #year {
+    color: var(--accent1-color);
+  }
+  #last-update {
+    color: var(--accent2-color);
+  }
+
+  main {
+    grid-column: 2 / 3;
+  }
