@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Tallassee Alabama Chamber of Commerce" />
+    <meta name="author" content="Nathan Hunt" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <title>Chamber of Commerce</title>
+    <!-- links -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/f4f3719e6e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/fill-footer.js" defer></script>
+    <script src="./js/membership.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/chamber-of-commerce-header.png"
+        alt="logo"
+        class="logo"
+      />
+      <h1>Tallassee Chamber of Commerce</h1>
+      <section>
+        <a
+          href="https://www.facebook.com/tallasseechamber/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/tallassee-chamber-of-commerce/about/"
+          target="_blank"
+          aria-label="Linkedin"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+      </section>
+      <nav>
+        <button id="hamburgerBtn">
+          <span>&#9776; Menu</span><span>X Close</span>
+        </button>
+        <ul id="primaryNav">
+          <li><a href="#">Home</a></li>
+          <li><a href="./discover.html">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li class="active"><a href="./join.html">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <span id="date"></span>
+    </header>
+
+    <main>
+      <form action="./thankyou.html" method="get">
+        <label for="fname">First name</label>
+        <input name="fname" id="fname" type="text" required />
+
+        <label for="lname">Last name</label>
+        <input name="lname" id="lname" type="text" required />
+
+        <label for="businesstitle">Business position title</label>
+        <input
+          name="businesstitle"
+          id="businesstitle"
+          type="text"
+          pattern="[A-Za-z\s\-]{7,}$"
+        />
+
+        <label for="email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="my.email@chamber.com"
+          required
+        />
+
+        <label for="cell">Cell phone</label>
+        <input
+          name="cell"
+          id="cell"
+          type="tel"
+          placeholder="(123)-456-7890"
+          required
+        />
+
+        <label for="businessname">Business name</label>
+        <input name="businessname" id="businessname" type="text" />
+
+        <label for="memberLevel">Membership level</label>
+        <select name="memberLevel" id="memberLevel">
+          <option value="default">desired membership</option>
+          <option value="np">NP Membership</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+
+        <label for="businessDescription">Business description</label>
+        <textarea
+          name="businessDescription"
+          id="businessDescription"
+        ></textarea>
+
+        <input
+          type="hidden"
+          name="currentDateAndTime"
+          id="currentDateAndTime"
+        />
+
+        <button type="submit" id="joinFormBtn">Submit</button>
+      </form>
+
+      <div id="benefitsDisplay">
+        <table>
+          <tr>
+            <th></th>
+            <th colspan="1">Non-Profit Membership</th>
+            <th colspan="1">Bronze Membership</th>
+            <th colspan="1">Silver Membership</th>
+            <th colspan="1">Gold Membership</th>
+          </tr>
+          <tr>
+            <th scope="row">Annual Fee</th>
+            <td>FREE</td>
+            <td>$1,000</td>
+            <td>$1,250</td>
+            <td>$1,500</td>
+          </tr>
+          <tr>
+            <th scope="row">Access to member discussion board</th>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">City event discount</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">Leadership trainings</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">Spotlight on the chamber's website</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <th scope="row">Vendor license at all city events included</th>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <img
+        src="images/chamber-of-commerce-footer.png"
+        alt="logo"
+        class="logo"
+      />
+      <div id="address">
+        <address>Tallassee Chamber of Commerce</address>
+        <address>303 Barnett Blvd,</address>
+        <address>Tallassee, AL 36078</address>
+      </div>
+      <div>
+        <a href="mailto:info@fictionalemail.org" class="linkOnColor"
+          >info@fictionalemail.org</a
+        ><br />
+        <a href="tel:3342835151" class="linkOnColor">(334) 283-5151</a><br />
+        <a
+          href="https://goo.gl/maps/JDCBQgtfukNeMFHb9"
+          target="_blank"
+          class="linkOnColor"
+          ><i class="fas fa-map-marker-alt"></i> Our Location</a
+        >
+      </div>
+      <div id="baseFooter">
+        <span id="year"></span>
+        <span id="last-update"></span>
+      </div>
+    </footer>
+  </body>
+</html>

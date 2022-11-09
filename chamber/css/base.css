@@ -239,3 +239,8 @@ div.spotlight {
 #join-us:hover {
     cursor: pointer;
 }
+
+/* Classes */
+.hidden {
+    display: none;
+}

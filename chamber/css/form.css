@@ -1,0 +1,15 @@
+main {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: .5rem
+}

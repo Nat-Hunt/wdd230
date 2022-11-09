@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Tallassee Alabama Chamber of Commerce" />
+    <meta name="author" content="Nathan Hunt" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <title>Chamber of Commerce</title>
+    <!-- links -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/f4f3719e6e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/chamber-of-commerce-header.png"
+        alt="logo"
+        class="logo"
+      />
+      <section>
+        <a
+          href="https://www.facebook.com/tallasseechamber/"
+          target="_blank"
+          aria-label="Facebook"
+          ><i class="fa-brands fa-facebook fa-2xl"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/tallassee-chamber-of-commerce/about/"
+          target="_blank"
+          aria-label="Linkedin"
+          ><i class="fa-brands fa-linkedin fa-2xl"></i
+        ></a>
+      </section>
+      <nav>
+        <button id="hamburgerBtn">
+          <span>&#9776; Menu</span><span>X Close</span>
+        </button>
+        <ul id="primaryNav">
+          <li><a href="#">Home</a></li>
+          <li><a href="./discover.html">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="./join.html">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <span id="date"></span>
+    </header>
+
+    <main>
+      <h1 class="banner">Thank you for applying!</h1>
+    </main>
+
+    <footer>
+      <img
+        src="images/chamber-of-commerce-footer.png"
+        alt="logo"
+        class="logo"
+      />
+      <div id="address">
+        <address>Tallassee Chamber of Commerce</address>
+        <address>303 Barnett Blvd,</address>
+        <address>Tallassee, AL 36078</address>
+      </div>
+      <div>
+        <a href="mailto:info@fictionalemail.org" class="linkOnColor"
+          >info@fictionalemail.org</a
+        ><br />
+        <a href="tel:3342835151" class="linkOnColor">(334) 283-5151</a><br />
+        <a
+          href="https://goo.gl/maps/JDCBQgtfukNeMFHb9"
+          target="_blank"
+          class="linkOnColor"
+          ><i class="fas fa-map-marker-alt"></i> Our Location</a
+        >
+      </div>
+      <div id="baseFooter">
+        <span id="year"></span>
+        <span id="last-update"></span>
+      </div>
+    </footer>
+    <script src="./js/fill-footer.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/windchill.js"></script>
+  </body>
+</html>
