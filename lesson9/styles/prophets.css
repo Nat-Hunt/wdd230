@@ -1,0 +1,37 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+    background-color:silver;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
+}
+
+p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: rgba(0, 118, 198, .3);
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    margin-top: 10px;
+}
+p {
+    margin: 0 auto;
+}
+
+img, .cards {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 1)
+}
