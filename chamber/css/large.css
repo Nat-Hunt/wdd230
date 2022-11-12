@@ -66,4 +66,8 @@
   #spotlight div:last-child {
       margin-right: 3px;
   }
+
+  .cards {
+   grid-template-columns: repeat(3, minmax(320px, 1fr));
+   }
 }

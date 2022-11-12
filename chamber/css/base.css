@@ -244,3 +244,11 @@ div.spotlight {
 .hidden {
     display: none;
 }
+.cards {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(320px, 1fr));
+}
+.cards img {
+    width: 100%;
+}

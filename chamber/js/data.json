@@ -1,0 +1,74 @@
+[
+    {
+        "name": "non-profit1",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "np"
+    },
+    {
+        "name": "non-profit2",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "np"
+    },
+    {
+        "name": "bronze1",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "bronze"
+    },
+    {
+        "name": "bronze2",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "bronze"
+    },
+    {
+        "name": "bronze3",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "bronze"
+    },
+    {
+        "name": "bronze4",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "bronze"
+    },
+    {
+        "name": "silver1",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "silver1"
+    },
+    {
+        "name": "silver2",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "silver"
+    },
+    {
+        "name": "gold1",
+        "address": "123 nowhere st. Tallassee AL, 36078",
+        "phone": "(123) 456-789",
+        "website": "www.fake-website.com",
+        "iconFile": "./images/300x400_placeholder.png",
+        "membershipLevel": "gold"
+    }
+]
