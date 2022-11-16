@@ -20,6 +20,9 @@
       src="https://kit.fontawesome.com/f4f3719e6e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/fill-footer.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/weather.js" defer></script>
   </head>
   <body>
     <header>
@@ -94,10 +97,10 @@
       </div>
       <div class="homeBlock leftColumn" id="weather">
         <h2>Weather</h2>
-        <i class="fa-solid fa-cloud fa-5x"></i>
+        <img src="" alt="" id="weather-icon"></img>
         <p class="weather"><span class="weather" id="temp">35</span>&#8457;</p>
-        <p id="weatherType">Cloudy</p>
-        <p class="wind">Wind Speed: <span id="windSpeed">5</span> mi/h</p>
+        <figcaption></figcaption>
+        <p class="wind">Wind Speed: <span id="windSpeed"></span> mi/h</p>
         <p class="wind">Wind Chill: <span id="windChill"></span></p>
       </div>
       <div class="homeBlock leftColumn" id="join">
@@ -198,8 +201,5 @@
         <span id="last-update"></span>
       </div>
     </footer>
-    <script src="./js/fill-footer.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/windchill.js"></script>
   </body>
 </html>
