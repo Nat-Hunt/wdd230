@@ -13,9 +13,9 @@ function calculateWindchill(temp, speed) {
       0.6215 * temp -
       35.75 * Math.pow(speed, 0.16) +
       0.42756 * temp * Math.pow(speed, 0.16);
-    document.getElementById("windChill").innerHTML = `${
+    document.getElementById("windChill").innerHTML = `${(
       Math.round((windchill + Number.EPSILON) * 100) / 100
-    } &#8457;`;
+    ).toFixed(0)} &#8457;`;
   } else {
     document.getElementById("windChill").innerHTML = "N/A";
   }
