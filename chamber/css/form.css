@@ -13,3 +13,7 @@ table, tr, td, th {
     border-collapse: collapse;
     padding: .5rem
 }
+
+#contactForm {
+    justify-self: end;
+}

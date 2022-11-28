@@ -1,74 +1,92 @@
 [
-    {
-        "name": "non-profit1",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "np"
-    },
-    {
-        "name": "non-profit2",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "np"
-    },
-    {
-        "name": "bronze1",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "bronze"
-    },
-    {
-        "name": "bronze2",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "bronze"
-    },
-    {
-        "name": "bronze3",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "bronze"
-    },
-    {
-        "name": "bronze4",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "bronze"
-    },
-    {
-        "name": "silver1",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "silver1"
-    },
-    {
-        "name": "silver2",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "silver"
-    },
-    {
-        "name": "gold1",
-        "address": "123 nowhere st. Tallassee AL, 36078",
-        "phone": "(123) 456-789",
-        "website": "www.fake-website.com",
-        "iconFile": "./images/300x400_placeholder.png",
-        "membershipLevel": "gold"
-    }
+  {
+    "name": "Alabama Power Company",
+    "address": "303 Gilmer Ave, Tallassee, AL 36078",
+    "phone": "3342522901",
+    "email": "",
+    "website": "https://www.alabamapower.com/",
+    "iconFile": "./images/al-power-v-tm-cmyk-ff1752825b5480b7.webp",
+    "membershipLevel": "gold",
+    "tagline": "Serving power to Alabama for over 100 years!"
+  },
+  {
+    "name": "Factory Connection",
+    "address": "401 Gilmer Ave Tallassee, AL 36078",
+    "phone": "3342835489",
+    "email": "",
+    "website": "https://www.factory-connection.com/",
+    "iconFile": "./images/FC_Logo_Combined_Website.webp",
+    "membershipLevel": "bronze",
+    "tagline": "The looks you love for less"
+  },
+  {
+    "name": "The Apothecary Inc.",
+    "address": "1405 Gilmer Ave, Tallassee, AL 36078",
+    "phone": "3342833120",
+    "email": "",
+    "website": "https://stores.healthmart.com/TheApothecaryPharmacy",
+    "iconFile": "./images/213750480_207060088086086_6942578254879524944_n.jpg",
+    "membershipLevel": "bronze",
+    "tagline": ""
+  },
+  {
+    "name": "https://3amgrowers.com/",
+    "address": "19570 Rifle Range Rd, Tallassee, AL 36078",
+    "phone": "3342838140",
+    "email": "",
+    "website": "https://3amgrowers.com/",
+    "iconFile": "./images/cropped-cropped-3am-horizontal-bigger-263x81-removebg-preview-2.webp",
+    "membershipLevel": "bronze",
+    "tagline": ""
+  },
+  {
+    "name": "1220 Café",
+    "address": "1220 Gilmer Avenue, Tallassee, AL 36078",
+    "phone": "3342521220",
+    "email": "",
+    "website": "https://1220cafe.com/",
+    "iconFile": "./images/1220-Logo.png",
+    "membershipLevel": "silver",
+    "tagline": "Fast casual fresh dining"
+  },
+  {
+    "name": "Godwin's Flowers",
+    "address": "117 Central Blvd, Tallassee, AL 36078",
+    "phone": "3342832160",
+    "email": "info@godwinsflowersal.com",
+    "website": "https://www.godwinsflowersal.net/",
+    "iconFile": "./images/godwin.jpg",
+    "membershipLevel": "silver",
+    "tagline": "\"Flowers with a personal touch\" Serving Tallassee for over 43 years"
+  },
+  {
+    "name": "Dottie's Childcare",
+    "address": "1717 Gilmer Ave, Tallassee, AL 36078",
+    "phone": "3342832885",
+    "email": "dottieschildcare@elmore.rr.com",
+    "website": "https://www.facebook.com/profile.php?id=100057422081364",
+    "iconFile": "./images/dotties-childcare.jpg",
+    "membershipLevel": "silver1",
+    "tagline": "Daycare cattering to infants through elementary school"
+  },
+  {
+    "name": "AES Industries",
+    "address": "2171 Alabama Hwy 229, Tallassee, AL 36078",
+    "phone": "8007860402",
+    "email": "",
+    "website": "https://www.aescurb.com/",
+    "iconFile": "./images/industriesLogo_header.png",
+    "membershipLevel": "silver",
+    "tagline": "A single source for national account HVAC replacement programs"
+  },
+  {
+    "name": "GKN Aerospace - Special Products Group",
+    "address": "11 Twin Creeks Drive, Tallassee, Alabama 36078",
+    "phone": "3342839400",
+    "email": "info@gkn.com",
+    "website": "https://www.gknaerospace.com/",
+    "iconFile": "./images/gkn-aerospace-horizontal.svg",
+    "membershipLevel": "gold",
+    "tagline": "The world's leading multi-tech tier 1 aerospace supplier"
+  }
 ]

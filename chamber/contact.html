@@ -16,6 +16,7 @@
     <link href="css/base.css" rel="stylesheet" />
     <link href="css/medium.css" rel="stylesheet" />
     <link href="css/large.css" rel="stylesheet" />
+    <link href="./css/form.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/f4f3719e6e.js"
       crossorigin="anonymous"
@@ -58,7 +59,78 @@
       <span id="date"></span>
     </header>
 
-    <main></main>
+    <main>
+      <div id="contactForm">
+        <h2>Contact Us</h2>
+
+        <form action="./thankyou.html" method="get">
+          <label for="name">Name</label>
+          <input name="name" id="name" type="text" required />
+
+          <label for="email">Email Address</label>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="my.email@chamber.com"
+            required
+          />
+
+          <label for="cell">Cell phone</label>
+          <input
+            name="cell"
+            id="cell"
+            type="tel"
+            placeholder="(123)-456-7890"
+            required
+          />
+
+          <label for="preference">Contact Preference</label>
+          <select name="preference">
+            <option value="none">Choose...</option>
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+          </select>
+
+          <label for="questions_comments">Questions or Comments</label>
+          <textarea
+            name="questions_comments"
+            id="questions_comments"
+          ></textarea>
+
+          <input
+            type="hidden"
+            name="currentDateAndTime"
+            id="currentDateAndTime"
+          />
+
+          <button type="submit" id="joinFormBtn">Submit</button>
+        </form>
+      </div>
+
+      <div>
+        <h2>Contact Us</h2>
+        <div>
+          <a href="mailto:info@fictionalemail.org">info@fictionalemail.org</a
+          ><br />
+          <a href="tel:3342835151">(334) 283-5151</a><br />
+          <div>
+            <address>Tallassee Chamber of Commerce</address>
+            <address>303 Barnett Blvd,</address>
+            <address>Tallassee, AL 36078</address>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.6423703529576!2d-85.8933174!3d32.535697299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888c471ef8981ecf%3A0xe4fcf9bd4f6acefd!2sTallassee%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1669660180690!5m2!1sen!2sus"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <img

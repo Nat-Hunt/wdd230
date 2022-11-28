@@ -241,16 +241,13 @@ div.spotlight {
 }
 
 /* Classes */
-.hidden {
-    display: none;
-}
 .cards {
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(1, minmax(320px, 1fr));
 }
 .cards img {
-    max-width: 100%;
+    max-width: 250px;
 }
 .cards section {
     display: flex;
@@ -260,9 +257,46 @@ div.spotlight {
     border: 1px solid black;
     padding: 1rem;
     background-color: rgba(4, 114, 77, .3);
-    max-width: 500px;
 }
 
-.cards img, .cards {
+.cards img {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 1);
+}
+
+.cards section {
+    margin: 0 auto;
+    inline-size: min-content;
+    word-break: break-all;
+}
+
+#directorySelectorDiv {
+    justify-self: center;
+    margin: 0 auto;
+    width: 300px;
+}
+.directorySelector {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #000;
+}
+
+
+.directoryListView {
+    justify-self: center;
+    margin: 0 auto;
+    width: 80%;
+
+}
+.directoryListView tr:nth-child(odd) {
+    background-color: rgba(0,0,0,.2);
+}
+
+.active {
+    background-color: rgba(0,0,0,.2);
+}
+
+.hidden {
+    display: none;
 }

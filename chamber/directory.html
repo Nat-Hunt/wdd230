@@ -16,6 +16,7 @@
     <link href="css/base.css" rel="stylesheet" />
     <link href="css/medium.css" rel="stylesheet" />
     <link href="css/large.css" rel="stylesheet" />
+
     <script
       src="https://kit.fontawesome.com/f4f3719e6e.js"
       crossorigin="anonymous"
@@ -61,7 +62,19 @@
     </header>
 
     <main>
+      <div id="directorySelectorDiv">
+        <button id="cardBtn" class="directorySelector active">
+          <i class="fa-solid fa-table-cells fa-lg"></i>
+        </button>
+        <button id="listBtn" class="directorySelector">
+          <i class="fa-solid fa-list"></i>
+        </button>
+      </div>
       <div class="cards"></div>
+      <div class="list hidden">
+        <table id="directoryListView1" class="directoryListView hidden"></table>
+        <table id="directoryListView2" class="directoryListView"></table>
+      </div>
     </main>
 
     <footer>
