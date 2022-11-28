@@ -291,7 +291,12 @@ div.spotlight {
 }
 .directoryListView tr:nth-child(odd) {
     background-color: rgba(0,0,0,.2);
+    word-break: break-all;
 }
+
+#directoryListView1 {
+    display: none;
+  }
 
 .active {
     background-color: rgba(0,0,0,.2);

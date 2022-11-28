@@ -70,4 +70,11 @@
   .cards {
    grid-template-columns: repeat(3, minmax(320px, 1fr));
    }
+   
+  #directoryListView2 {
+   display: none;
+ }
+ #directoryListView1 {
+   display: block;
+ }
 }
