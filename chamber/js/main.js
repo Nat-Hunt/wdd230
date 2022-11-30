@@ -14,7 +14,7 @@ fetch("./js/data.json")
     return response.json();
   })
   .then(function (jsonObject) {
-    console.log(jsonObject);
+    // console.log(jsonObject);
     const companies = jsonObject;
     companies.forEach(createSpotlight);
     displaySpotlights();

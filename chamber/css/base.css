@@ -129,6 +129,7 @@ p, li, section {
     color: var(--paragraph-color);
     font-family: var(--paragraph-font);
     font-size: 16px;
+    padding: .5rem;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -207,10 +208,16 @@ div#weather {
 div#weather h2, div#weather #weatherType, div#weather .wind  {
     grid-column: 1 / -1;
 }
+
+#weather h2, #weather img, #weather p, #weather figcaption{
+    margin: 0px;
+}
+
 /* generic blocks of content*/
 div.homeBlock {
     border: 1px solid rgba(0,0,0,.3);
     background-color: rgba(4, 114, 77, .5);
+    padding: .5rem;
 }
 div.homeBlock p, div.homeBlock h2, div.homeBlock h3 {
     color: var(--paragraph-color);
@@ -218,6 +225,8 @@ div.homeBlock p, div.homeBlock h2, div.homeBlock h3 {
 div.spotlight {
     border: 1px solid rgba(0,0,0,.2);
     background-color: rgba(4, 114, 77, .7);
+    margin: .2rem;
+    padding: .5rem;
 }
 .companyLogo {
     max-width: 200px;
@@ -272,7 +281,7 @@ div.spotlight {
 #directorySelectorDiv {
     justify-self: center;
     margin: 0 auto;
-    width: 300px;
+    /* width: 500px; */
 }
 .directorySelector {
     margin: .2rem 2vw;
@@ -280,8 +289,8 @@ div.spotlight {
     border: none;
     font-size: 2rem;
     color: #000;
+    margin: 0 auto;
 }
-
 
 .directoryListView {
     justify-self: center;

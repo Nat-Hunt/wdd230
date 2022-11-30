@@ -23,7 +23,7 @@ function calculateWindchill(temp, speed) {
 
 function displayResults(weatherdata) {
   currentTemp.innerHTML = `${weatherdata.main.temp.toFixed(0)}`;
-  const iconImg = `https://openweathermap.org/img/w/${weatherdata.weather[0].icon}.png`;
+  const iconImg = `https://openweathermap.org/img/wn/${weatherdata.weather[0].icon}@2x.png`;
   let desc = weatherdata.weather[0].description;
 
   const descArray = desc.split(" ");
@@ -46,7 +46,7 @@ async function getWeather() {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       displayResults(data);
     } else {
       throw Error(await response.text());
