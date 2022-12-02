@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+:root {
+    --heading-font: serif;
+    --paragraph-font: arial, sans-serif;
+
+    /* coolors.co color pallet: https://coolors.co/edc79b-515052-628b48-6ab547-f15025 */
+    --primary-color: rgba(237, 199, 155, 1); /* Call to action background */
+    --secondary-color: rgba(106, 181, 71, 1); /* background of the whole page */
+    --accent-color-1: rgb(98, 139, 72);
+    --accent-color-2: rgb(81, 80, 82); /* used for shading. Like box shadows, showing what is being hovered on, showing what page you're on in the Nav bar, etc.*/
+    --accent-color-3: rgb(241, 80, 37); /* Used for warnings, alerts, notifications, banners */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* color: var(--heading-color); */
+    font-family: var(--heading-font);
+}
+
+p, li, span, label, input {
+    font-family: var(--paragraph-font);
+}
+
+#primary {
+    background-color: var(--primary-color);
+}
+#secondary {
+    background-color: var(--secondary-color);
+}
+#accent-1 {
+    background-color: var(--accent-color-1);
+}
+#accent-2 {
+    background-color: var(--accent-color-2);
+}
+#accent-2 p {
+    color: var(--primary-color);
+}
+#accent-3 {
+    background-color: var(--accent-color-3);
+}
+.colorDemo {
+    padding: 1rem;
+}
+
+
+nav {
+    background-color: rgba(81, 80, 82, .4);
+}
+#nav {
+    margin: 0 auto;
+    padding: 0;
+}
+#nav li {
+    list-style: none;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+a:hover {
+    background-color: rgba(81, 80, 82, .3);
+}
