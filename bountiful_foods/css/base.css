@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Lobster+Two&display=swap');
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
@@ -8,15 +8,24 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
 :root {
-    --heading-font: serif;
+    --heading-font: 'Lobster Two', cursive;
     --paragraph-font: arial, sans-serif;
 
     /* coolors.co color pallet: https://coolors.co/edc79b-515052-628b48-6ab547-f15025 */
-    --primary-color: rgba(237, 199, 155, 1); /* Call to action background */
-    --secondary-color: rgba(106, 181, 71, 1); /* background of the whole page */
-    --accent-color-1: rgb(98, 139, 72);
-    --accent-color-2: rgb(81, 80, 82); /* used for shading. Like box shadows, showing what is being hovered on, showing what page you're on in the Nav bar, etc.*/
-    --accent-color-3: rgb(241, 80, 37); /* Used for warnings, alerts, notifications, banners */
+    --primary-color: #edc79b; /* Call to action background */
+    --primary-color-rgb: 237,199,155;
+
+    --secondary-color: #6ab547;
+    --secondary-color-rgb: 106,181,71;
+
+    --accent-color-1: #628b48;
+    --accent-color-1-rgb: 98,139,72;
+
+    --accent-color-2: #515052; /* used for shading. Like box shadows, showing what is being hovered on, showing what page you're on in the Nav bar, etc.*/
+    --accent-color-2-rgb: 81,80,82;
+
+    --accent-color-3: #f15025; /* Used for warnings, alerts, notifications, banners */
+    --accent-color-3-rgb: 241,80,37;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,7 +61,8 @@ p, li, span, label, input {
 
 
 nav {
-    background-color: rgba(81, 80, 82, .4);
+    /* background-color: rgba(81, 80, 82, .5); */
+    background-color: rgba(var(--accent-color-2-rgb), .5);
 }
 #nav {
     margin: 0 auto;
@@ -70,5 +80,5 @@ a {
     padding: 1rem;
 }
 a:hover {
-    background-color: rgba(81, 80, 82, .3);
+    background-color: rgba(var(--accent-color-2-rgb), .5);
 }
