@@ -1,7 +1,16 @@
-@media only screen and (min-width: 35rem) and (max-width: 63.9rem) {
+@media only screen and (min-width: 35rem) {
     /* dynamic content hiding/displaying */
   
     /* Header Styles */
+    header .logo {
+      grid-row: 1 / 3;
+    }
+    header h1 {
+      justify-self: center;
+    }
+    #contactInfo {
+      grid-column: 2 / 3;
+    }
 
 /* Navigation Bar Styles */
 #navigation {
@@ -13,6 +22,7 @@
 
 a.navLink {
   border: 0;
+  width: 100%;
 }
 
 /* hamburger menu */

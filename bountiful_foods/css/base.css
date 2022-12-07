@@ -46,10 +46,16 @@ ul {
 /* Header Styles */
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px 1fr;
     grid-gap: 10px;
     background-color: var(--accent-color-1);
     padding: 1rem;
+}
+#contactInfo {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
 /* Navigation Bar Styles */

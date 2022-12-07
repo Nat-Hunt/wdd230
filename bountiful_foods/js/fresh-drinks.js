@@ -8,7 +8,6 @@ fetch("./data/fruit.json")
   })
   .then(function (json) {
     const products = json;
-    console.log(json);
     products.forEach(createSelectOption);
   });
 

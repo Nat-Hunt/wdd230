@@ -11,7 +11,7 @@
 
     <title>Bountiful Foods</title>
     <!-- Stylesheets -->
-    <link defer rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- <link defer rel="icon" href="./favicon.ico" type="image/x-icon" /> -->
     <link defer href="./css/normalize.css" rel="stylesheet" />
     <link defer href="./css/base.css" rel="stylesheet" />
     <link defer href="./css/medium.css" rel="stylesheet" />
@@ -28,12 +28,10 @@
   </head>
   <body>
     <header>
-      <img src="./images/#" alt="Bountiful Foods logo" />
+      <img src="./images/#" alt="Bountiful Foods logo" class="logo" />
       <h1>About Us</h1>
-      <span>
+      <span id="contactInfo">
         <a href="tel:1234567890">(123) 456-7890</a>
-      </span>
-      <span>
         <a href="mailto:email_us@bountifulemail.com"
           >email_us@bountifulemail.com</a
         >
@@ -139,6 +137,7 @@
       </div>
       <div class="contentBlock" id="contact">
         <form id="contactForm">
+          <h2>Contact Us</h2>
           <input id="fname" name="fname" placeholder="First Name" />
           <input id="userPhone" name="userPhone" placeholder="(123) 456-789" />
           <input
@@ -174,7 +173,7 @@
         <div id="address"></div>
         <address><a id="email"></a></address>
       </div>
-      <img src="./images/#" alt="Bountiful Foods logo" />
+      <img src="./images/#" alt="Bountiful Foods logo" class="logo" />
       <div id="baseFooter">
         <span id="year"></span>
         <span id="last-update"></span>
