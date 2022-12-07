@@ -1,28 +1,28 @@
 "use strict";
 // fill in the base footer
+const phone = document.getElementById("phone");
+const address = document.getElementById("address");
+const email = document.getElementById("email");
+const year = document.getElementById("year");
+const lastUpdate = document.getElementById("last-update");
+
 const today = new Date();
-const longDate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-  today
-);
 
-document.getElementById("date").textContent = longDate;
+phone.setAttribute("href", "tel:1234567890");
+phone.innerHTML = "(123) 456-7890";
 
-function toggleMenu() {
-  document.getElementById("primaryNav").classList.toggle("open");
-  document.getElementById("hamburgerBtn").classList.toggle("open");
-}
+let line1 = document.createElement("address");
+line1.innerHTML = "Bountiful Foods";
+let line2 = document.createElement("address");
+line2.innerHTML = "123 fake rd,";
+let line3 = document.createElement("address");
+line3.innerHTML = "Carlsbad, CA, 12345";
+address.appendChild(line1)
+address.appendChild(line2)
+address.appendChild(line3)
 
-document.getElementById("hamburgerBtn").addEventListener("click", toggleMenu);
+email.setAttribute("href", "mailto:email_us@bountifulemail.com");
+email.innerHTML = "email_us@bountifulemail.com";
 
-const currentDate = new Date();
-const copyright = "&copy ";
-const author =
-  " Tallassee Chamber of Commerce | Nathan T. Hunt | WDD 230 Project | ";
-document.querySelector("#year").innerHTML = copyright.concat(
-  currentDate.getFullYear(),
-  author
-);
-const lastUpdate = "Last Updated: ";
-document.querySelector("#last-update").textContent = lastUpdate.concat(
-  document.lastModified
-);
+year.innerHTML = `&copy ${today.getFullYear()} Bountiful Foods | Nathan T. Hunt | WDD 230 Final |`;
+lastUpdate.textContent = `Last Updated: ${document.lastModified}`;

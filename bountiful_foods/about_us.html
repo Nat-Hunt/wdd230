@@ -24,17 +24,175 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/fill-footer.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <img src="./images/#" alt="Bountiful Foods logo" />
+      <h1>About Us</h1>
+      <span>
+        <a href="tel:1234567890">(123) 456-7890</a>
+      </span>
+      <span>
+        <a href="mailto:email_us@bountifulemail.com"
+          >email_us@bountifulemail.com</a
+        >
+      </span>
+      <nav>
+        <section>
+          <button id="hamburgerBtn">
+            <span>&#9776; Menu</span><span>X Close</span>
+          </button>
+          <ul id="navigation">
+            <li><a class="navLink" href="./index.html">Home</a></li>
+            <li><a class="navLink" href="./fresh.html">Fresh</a></li>
+            <li>
+              <a class="navLink active" href="./about_us.html">About Us</a>
+            </li>
+          </ul>
+        </section>
+        <section id="socialMediaLinks">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            aria-label="Linkedin"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+        </section>
+      </nav>
+    </header>
 
-    <main></main>
+    <main>
+      <div class="contentBlock" id="ourHistory">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit quisque ac, mus
+          justo vivamus imperdiet viverra gravida cubilia eros in, nulla sed
+          nibh quis scelerisque metus ridiculus diam. Arcu sed sit condimentum
+          eros suspendisse sem ad fusce, dapibus nisi in consectetur elementum
+          potenti orci non rutrum, purus posuere accumsan inceptos porttitor
+          ipsum phasellus.
+        </p>
+        <p>
+          Eget tristique luctus suspendisse egestas curae inceptos cum, quisque
+          sed ac ultrices lacinia scelerisque porttitor molestie, arcu sapien
+          nascetur placerat mi parturient. Sapien habitant commodo pharetra
+          pulvinar condimentum aptent netus, fermentum massa penatibus sodales
+          ut ac nullam, integer sed molestie accumsan platea nisi. Porttitor
+          pharetra fermentum nostra nisl elementum quis viverra nunc commodo,
+          semper congue suscipit taciti adipiscing pellentesque feugiat sociis,
+          vulputate ut ligula rutrum sit ipsum eleifend urna.
+        </p>
+        <p>
+          Mus natoque vulputate rutrum magna a etiam phasellus primis nam
+          commodo est bibendum, vestibulum viverra purus suspendisse ridiculus
+          massa sem tincidunt vel netus facilisi dis, nascetur lorem cras proin
+          pellentesque sociosqu aliquet ante leo iaculis non. Dui lacinia
+          volutpat pharetra sapien curae sociosqu nullam tempor, penatibus nisi
+          parturient vel condimentum fusce tempus arcu, dignissim phasellus
+          risus per placerat potenti mollis. Convallis mattis adipiscing mi
+          ultricies penatibus inceptos, proin metus sit luctus litora praesent
+          dictumst, at tristique nunc lorem quam.
+        </p>
+      </div>
+      <div class="contentBlock" id="snapshot">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit quisque ac, mus
+          justo vivamus imperdiet viverra gravida cubilia eros in, nulla sed
+          nibh quis scelerisque metus ridiculus diam. Arcu sed sit condimentum
+          eros suspendisse sem ad fusce, dapibus nisi in consectetur elementum
+          potenti orci non rutrum, purus posuere accumsan inceptos porttitor
+          ipsum phasellus.
+        </p>
+        <p>
+          Eget tristique luctus suspendisse egestas curae inceptos cum, quisque
+          sed ac ultrices lacinia scelerisque porttitor molestie, arcu sapien
+          nascetur placerat mi parturient. Sapien habitant commodo pharetra
+          pulvinar condimentum aptent netus, fermentum massa penatibus sodales
+          ut ac nullam, integer sed molestie accumsan platea nisi. Porttitor
+          pharetra fermentum nostra nisl elementum quis viverra nunc commodo,
+          semper congue suscipit taciti adipiscing pellentesque feugiat sociis,
+          vulputate ut ligula rutrum sit ipsum eleifend urna.
+        </p>
+        <p>
+          Mus natoque vulputate rutrum magna a etiam phasellus primis nam
+          commodo est bibendum, vestibulum viverra purus suspendisse ridiculus
+          massa sem tincidunt vel netus facilisi dis, nascetur lorem cras proin
+          pellentesque sociosqu aliquet ante leo iaculis non. Dui lacinia
+          volutpat pharetra sapien curae sociosqu nullam tempor, penatibus nisi
+          parturient vel condimentum fusce tempus arcu, dignissim phasellus
+          risus per placerat potenti mollis. Convallis mattis adipiscing mi
+          ultricies penatibus inceptos, proin metus sit luctus litora praesent
+          dictumst, at tristique nunc lorem quam.
+        </p>
+      </div>
+      <form class="contentBlock" id="contactForm">
+        <input id="fname" name="fname" placeholder="First Name" />
+        <input id="userPhone" name="userPhone" placeholder="(123) 456-789" />
+        <input
+          id="userEmail"
+          name="userEmail"
+          placeholder="your-email@email.com"
+        />
+        <select name="preference">
+          <option value="none">Preferred contact method</option>
+          <option value="phone">Phone</option>
+          <option value="email">Email</option>
+        </select>
+        <textarea
+          name="comments/questions"
+          placeholder="Your comments or questions..."
+        ></textarea>
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26722.220125948985!2d-117.37427364383485!3d33.15434050424698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc720deeeda1f7%3A0xa64a87d1cd4ef10f!2sCarlsbad%20State%20Beach!5e0!3m2!1sen!2sus!4v1670364215577!5m2!1sen!2sus"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26722.220125948985!2d-117.37427364383485!3d33.15434050424698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc720deeeda1f7%3A0xa64a87d1cd4ef10f!2sCarlsbad%20State%20Beach!5e0!3m2!1sen!2sus!4v1670364215577!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe> -->
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26722.220125948985!2d-117.37427364383485!3d33.15434050424698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc720deeeda1f7%3A0xa64a87d1cd4ef10f!2sCarlsbad%20State%20Beach!5e0!3m2!1sen!2sus!4v1670364215577!5m2!1sen!2sus"
+        width="800"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe> -->
+    </main>
 
     <footer>
+      <address><a id="phone"></a></address>
+      <div id="address"></div>
+      <address><a id="email"></a></address>
       <div id="baseFooter">
         <span id="year"></span>
         <span id="last-update"></span>
       </div>
+      <img src="./images/#" alt="Bountiful Foods logo" />
     </footer>
   </body>
 </html>

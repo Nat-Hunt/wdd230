@@ -24,17 +24,190 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/fill-footer.js" defer></script>
+    <script src="./js/fresh-drinks.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <img src="./images/#" alt="Bountiful Foods logo" />
+      <h1>Fresh Drinks</h1>
+      <span>
+        <a href="tel:1234567890">(123) 456-7890</a>
+      </span>
+      <span>
+        <a href="mailto:email_us@bountifulemail.com"
+          >email_us@bountifulemail.com</a
+        >
+      </span>
+      <nav>
+        <section>
+          <button id="hamburgerBtn">
+            <span>&#9776; Menu</span><span>X Close</span>
+          </button>
+          <ul id="navigation">
+            <li><a class="navLink" href="./index.html">Home</a></li>
+            <li><a class="navLink active" href="./fresh.html">Fresh</a></li>
+            <li><a class="navLink" href="./about_us.html">About Us</a></li>
+          </ul>
+        </section>
+        <section id="socialMediaLinks">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            aria-label="Linkedin"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+        </section>
+      </nav>
+    </header>
 
-    <main></main>
+    <main>
+      <div class="contentBlock" id="customDrinksGreeting">
+        <h2>Make your own drink!</h2>
+        <p>Total created drinks: <span id="totalCreatedDrinks"></span></p>
+      </div>
+      <form class="contentBlock" id="drinkCreation">
+        <input id="userPhone" name="userPhone" placeholder="(123) 456-789" />
+        <input id="fname" name="fname" placeholder="First Name" />
+        <input
+          id="userEmail"
+          name="userEmail"
+          placeholder="your-email@email.com"
+        />
+        <select id="product1" name="product1">
+          <option value="none">Choose your first ingredient</option>
+        </select>
+        <select id="product2" name="product2">
+          <option value="none">Choose your second ingredient</option>
+        </select>
+        <select id="product3" name="product3">
+          <option value="none">Choose your third ingredient</option>
+        </select>
+      </form>
+
+      <div class="contentBlock" id="nutritionFacts">
+        <h2>Nutrition Facts</h2>
+        <table>
+          <tr>
+            <th>Carbohydrates</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Protein</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Fat</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Sugar</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Calories</th>
+            <td>0</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="contentBlock healthDrinkMenu">
+        <ul class="menu">
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 1" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 2" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 3" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 4" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 5" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 6" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 7" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
 
     <footer>
+      <address><a id="phone"></a></address>
+      <div id="address"></div>
+      <address><a id="email"></a></address>
       <div id="baseFooter">
         <span id="year"></span>
         <span id="last-update"></span>
       </div>
+      <img src="./images/#" alt="Bountiful Foods logo" />
     </footer>
   </body>
 </html>

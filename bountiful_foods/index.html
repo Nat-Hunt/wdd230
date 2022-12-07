@@ -24,42 +24,209 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/fill-footer.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/weather.js" defer></script>
   </head>
   <body>
-    <header></header>
+    <header>
+      <img src="./images/#" alt="Bountiful Foods logo" />
+      <h1>Bountiful Foods</h1>
+      <span>
+        <a href="tel:1234567890">(123) 456-7890</a>
+      </span>
+      <span>
+        <a href="mailto:email_us@bountifulemail.com"
+          >email_us@bountifulemail.com</a
+        >
+      </span>
+      <nav>
+        <section>
+          <button id="hamburgerBtn">
+            <span>&#9776; Menu</span><span>X Close</span>
+          </button>
+          <ul id="navigation">
+            <li><a class="navLink active" href="./index.html">Home</a></li>
+            <li><a class="navLink" href="./fresh.html">Fresh</a></li>
+            <li><a class="navLink" href="./about_us.html">About Us</a></li>
+          </ul>
+        </section>
+        <section id="socialMediaLinks">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            aria-label="Linkedin"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+        </section>
+      </nav>
+    </header>
 
     <main>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-      <nav>
-        <ul id="nav">
+      <div class="contentBlock" id="localAreaInfo">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipiscing elit quisque ac, mus
+          justo vivamus imperdiet viverra gravida cubilia eros in, nulla sed
+          nibh quis scelerisque metus ridiculus diam. Arcu sed sit condimentum
+          eros suspendisse sem ad fusce, dapibus nisi in consectetur elementum
+          potenti orci non rutrum, purus posuere accumsan inceptos porttitor
+          ipsum phasellus.
+        </p>
+        <p>
+          Eget tristique luctus suspendisse egestas curae inceptos cum, quisque
+          sed ac ultrices lacinia scelerisque porttitor molestie, arcu sapien
+          nascetur placerat mi parturient. Sapien habitant commodo pharetra
+          pulvinar condimentum aptent netus, fermentum massa penatibus sodales
+          ut ac nullam, integer sed molestie accumsan platea nisi. Porttitor
+          pharetra fermentum nostra nisl elementum quis viverra nunc commodo,
+          semper congue suscipit taciti adipiscing pellentesque feugiat sociis,
+          vulputate ut ligula rutrum sit ipsum eleifend urna.
+        </p>
+        <p>
+          Mus natoque vulputate rutrum magna a etiam phasellus primis nam
+          commodo est bibendum, vestibulum viverra purus suspendisse ridiculus
+          massa sem tincidunt vel netus facilisi dis, nascetur lorem cras proin
+          pellentesque sociosqu aliquet ante leo iaculis non. Dui lacinia
+          volutpat pharetra sapien curae sociosqu nullam tempor, penatibus nisi
+          parturient vel condimentum fusce tempus arcu, dignissim phasellus
+          risus per placerat potenti mollis. Convallis mattis adipiscing mi
+          ultricies penatibus inceptos, proin metus sit luctus litora praesent
+          dictumst, at tristique nunc lorem quam.
+        </p>
+      </div>
+
+      <div class="contentBlock" id="weather">
+        <div id="weatherToday">
+          <h2>Weather</h2>
+          <p><span id="temp">35</span>&#8457;</p>
+          <img src="" alt="" id="weather-icon" />
+          <figcaption id="todayFig"></figcaption>
+          <p>Humidity: <span id="humidity">20</span>%</p>
+          <p>Feels Like: <span id="feelsLike">40</span>&#8457;</p>
+        </div>
+        <section id="threeDayForecast">
+          <h2>3 Day Forecast</h2>
+          <ul id="forecast">
+            <li>
+              <h3>Wednesday</h3>
+              <p><span id="tempForecast1">35</span>&#8457;</p>
+              <img src="" alt="" id="forecast1-icon" />
+              <figcaption id="forecast1Fig"></figcaption>
+            </li>
+            <li>
+              <h3>Thursday</h3>
+              <p><span id="tempForecast2">35</span>&#8457;</p>
+              <img src="" alt="" id="forecast2-icon" />
+              <figcaption id="forecast2Fig"></figcaption>
+            </li>
+            <li>
+              <h3>Friday</h3>
+              <p><span id="tempForecast3">35</span>&#8457;</p>
+              <img src="" alt="" id="forecast3-icon" />
+              <figcaption id="forecast3Fig"></figcaption>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="contentBlock healthDrinkMenu">
+        <ul class="menu">
           <li>
-            <a href="#">Navigation</a>
+            <img src="./images/300x400_placeholder.png" alt="health drink 1" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 2" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 3" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 4" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 5" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 6" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </li>
+          <li>
+            <img src="./images/300x400_placeholder.png" alt="health drink 7" />
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
           </li>
         </ul>
-      </nav>
-
-      <p>Paragraph</p>
-      <ul>
-        <li>List</li>
-      </ul>
-      <span>Span</span>
-      <form>
-        <label for="demo">Form</label>
-        <input name="demo" id="demo" placeholder="lorem ipsum" />
-      </form>
+        <div id="makeyourdrink">
+          <button>Make your own drink!</button>
+          <p>Total created drinks: <span id="totalCreatedDrinks"></span></p>
+        </div>
+      </div>
     </main>
-    <div class="colorDemo" id="primary"><p>Color 1</p></div>
-    <div class="colorDemo" id="secondary"><p>Color 2</p></div>
-    <div class="colorDemo" id="accent-1"><p>Color 3</p></div>
-    <div class="colorDemo" id="accent-2"><p>Color 4</p></div>
-    <div class="colorDemo" id="accent-3"><p>Color 5</p></div>
 
     <footer>
+      <div>
+        <address><a id="phone"></a></address>
+        <div id="address"></div>
+        <address><a id="email"></a></address>
+      </div>
+      <img src="./images/#" alt="Bountiful Foods logo" />
       <div id="baseFooter">
         <span id="year"></span>
         <span id="last-update"></span>
