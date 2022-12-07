@@ -1,23 +1,66 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 35rem) and (max-width: 63.9rem) {
     /* dynamic content hiding/displaying */
   
-    /* main {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    } */
-  
-    /* Footer */
-    /* footer {
-      background-color: var(--accent-color-2);
-      display: grid;
-      grid-template: auto auto / 100px auto auto;
-      align-items: center;
-      justify-items: center;
-    } */
-  }
-  
-  @media only screen and (max-width: 63.9rem)  {
-    /* #weather {
-      grid-column: 3;
-    } */
-  }
+    /* Header Styles */
+
+/* Navigation Bar Styles */
+#navigation {
+  display: flex;
+}
+#navigation li:nth-child(1), #navigation li:nth-child(2) {
+  border-right: 1px solid black;
+}
+
+a.navLink {
+  border: 0;
+}
+
+/* hamburger menu */
+#hamburgerBtn {
+  display: none;
+}
+
+/* Home Page Styles */
+#weather {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#threeDayForecast {
+  padding-left: 1rem;
+  border-left: 1px solid black;
+}
+#makeyourdrink {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+
+/* Fresh Drinks Styles */
+#drinkCreation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+#drinkCreationForm {
+  grid-template-columns: 1fr;
+}
+
+/* About Us Styles */
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Class Styles */
+.contentBlock {
+  border: 1px solid black;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(var(--primary-color-rgb), .2);
+}
+
+/* ID Styles */
+
+}

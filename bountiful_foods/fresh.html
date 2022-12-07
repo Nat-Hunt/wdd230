@@ -46,7 +46,9 @@
           </button>
           <ul id="navigation">
             <li><a class="navLink" href="./index.html">Home</a></li>
-            <li><a class="navLink active" href="./fresh.html">Fresh</a></li>
+            <li class="active">
+              <a class="navLink" href="./fresh.html">Fresh</a>
+            </li>
             <li><a class="navLink" href="./about_us.html">About Us</a></li>
           </ul>
         </section>
@@ -73,56 +75,58 @@
       </nav>
     </header>
 
-    <main>
+    <main id="fresh">
       <div class="contentBlock" id="customDrinksGreeting">
         <h2>Make your own drink!</h2>
         <p>Total created drinks: <span id="totalCreatedDrinks"></span></p>
       </div>
-      <form class="contentBlock" id="drinkCreation">
-        <input id="userPhone" name="userPhone" placeholder="(123) 456-789" />
-        <input id="fname" name="fname" placeholder="First Name" />
-        <input
-          id="userEmail"
-          name="userEmail"
-          placeholder="your-email@email.com"
-        />
-        <select id="product1" name="product1">
-          <option value="none">Choose your first ingredient</option>
-        </select>
-        <select id="product2" name="product2">
-          <option value="none">Choose your second ingredient</option>
-        </select>
-        <select id="product3" name="product3">
-          <option value="none">Choose your third ingredient</option>
-        </select>
-      </form>
 
-      <div class="contentBlock" id="nutritionFacts">
-        <h2>Nutrition Facts</h2>
-        <table>
-          <tr>
-            <th>Carbohydrates</th>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th>Protein</th>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th>Fat</th>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th>Sugar</th>
-            <td>0</td>
-          </tr>
-          <tr>
-            <th>Calories</th>
-            <td>0</td>
-          </tr>
-        </table>
+      <div class="contentBlock" id="drinkCreation">
+        <form id="drinkCreationForm">
+          <input id="fname" name="fname" placeholder="First Name" />
+          <input id="userPhone" name="userPhone" placeholder="(123) 456-789" />
+          <input
+            id="userEmail"
+            name="userEmail"
+            placeholder="your-email@email.com"
+          />
+          <select id="product1" name="product1">
+            <option value="none">First ingredient</option>
+          </select>
+          <select id="product2" name="product2">
+            <option value="none">Second ingredient</option>
+          </select>
+          <select id="product3" name="product3">
+            <option value="none">Third ingredient</option>
+          </select>
+        </form>
+
+        <div id="nutritionFacts">
+          <h2>Nutrition Facts</h2>
+          <table>
+            <tr>
+              <th>Carbohydrates</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>Protein</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>Fat</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>Sugar</th>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>Calories</th>
+              <td>0</td>
+            </tr>
+          </table>
+        </div>
       </div>
-
       <div class="contentBlock healthDrinkMenu">
         <ul class="menu">
           <li>
@@ -200,14 +204,16 @@
     </main>
 
     <footer>
-      <address><a id="phone"></a></address>
-      <div id="address"></div>
-      <address><a id="email"></a></address>
+      <div>
+        <address><a id="phone"></a></address>
+        <div id="address"></div>
+        <address><a id="email"></a></address>
+      </div>
+      <img src="./images/#" alt="Bountiful Foods logo" />
       <div id="baseFooter">
         <span id="year"></span>
         <span id="last-update"></span>
       </div>
-      <img src="./images/#" alt="Bountiful Foods logo" />
     </footer>
   </body>
 </html>
