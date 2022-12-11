@@ -110,6 +110,6 @@ function updateTotalCreatedDrinks() {
 }
 
 submitBtn.addEventListener("click", () => {
-  event.preventDefault();
   displayNutritionFacts();
+  return false;
 });
