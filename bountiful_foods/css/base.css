@@ -194,7 +194,7 @@ footer {
 
 /* About Us Styles */
 
-#contactForm {
+.contactForm {
     display: grid;
     padding: 1rem;
   }
@@ -206,5 +206,7 @@ footer {
     padding: 1rem;
     background-color: rgba(var(--primary-color-rgb), .2);
 }
-
+.hidden {
+    display: none;
+}
 /* ID Styles */

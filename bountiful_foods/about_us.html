@@ -25,6 +25,7 @@
     ></script>
     <script src="./js/fill-footer.js" defer></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/contact-us.js" defer></script>
   </head>
   <body>
     <header>
@@ -136,16 +137,21 @@
         </p>
       </div>
       <div class="contentBlock" id="contact">
-        <form id="contactForm">
+        <form
+          id="contactForm"
+          class="contactForm"
+          action="./about_us.html"
+          method="get"
+        >
           <h2>Contact Us</h2>
-          <input id="fname" name="fname" placeholder="First Name" />
+          <input id="fname" name="fname" placeholder="First Name" require />
           <input id="userPhone" name="userPhone" placeholder="(123) 456-789" />
           <input
             id="userEmail"
             name="userEmail"
             placeholder="your-email@email.com"
           />
-          <select name="preference">
+          <select name="preference" aria-placeholder="Preferred contact method">
             <option value="none">Preferred contact method</option>
             <option value="phone">Phone</option>
             <option value="email">Email</option>
@@ -154,6 +160,14 @@
             name="comments/questions"
             placeholder="Your comments or questions..."
           ></textarea>
+
+          <input
+            type="hidden"
+            name="currentDateAndTime"
+            id="currentDateAndTime"
+          />
+
+          <button type="submit" id="contactFormBtn">Submit</button>
         </form>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26722.220125948985!2d-117.37427364383485!3d33.15434050424698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc720deeeda1f7%3A0xa64a87d1cd4ef10f!2sCarlsbad%20State%20Beach!5e0!3m2!1sen!2sus!4v1670364215577!5m2!1sen!2sus"
