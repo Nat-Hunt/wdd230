@@ -80,23 +80,25 @@
       </div>
 
       <div class="contentBlock" id="drinkCreation">
-        <form id="drinkCreationForm">
-          <input id="fname" name="fname" placeholder="First Name" />
-          <input id="userPhone" name="userPhone" placeholder="(123) 456-789" />
+        <form id="drinkCreationForm" action="./#" method="get">
+          <input id="fname" name="fname" placeholder="First Name" required />
+          <input
+            id="userPhone"
+            name="userPhone"
+            placeholder="(123) 456-789"
+            required
+          />
           <input
             id="userEmail"
             name="userEmail"
             placeholder="your-email@email.com"
+            required
           />
-          <select id="product1" name="product1">
-            <option value="none">First ingredient</option>
-          </select>
-          <select id="product2" name="product2">
-            <option value="none">Second ingredient</option>
-          </select>
-          <select id="product3" name="product3">
-            <option value="none">Third ingredient</option>
-          </select>
+          <select id="product1" name="product1"></select>
+          <select id="product2" name="product2"></select>
+          <select id="product3" name="product3"></select>
+
+          <button type="submit" id="drinkCreationBtn">Submit</button>
         </form>
 
         <div id="nutritionFacts">
@@ -104,23 +106,23 @@
           <table>
             <tr>
               <th>Carbohydrates</th>
-              <td>0</td>
+              <td id="totalCarbs">0</td>
             </tr>
             <tr>
               <th>Protein</th>
-              <td>0</td>
+              <td id="totalProtein">0</td>
             </tr>
             <tr>
               <th>Fat</th>
-              <td>0</td>
+              <td id="totalFat">0</td>
             </tr>
             <tr>
               <th>Sugar</th>
-              <td>0</td>
+              <td id="totalSugar">0</td>
             </tr>
             <tr>
               <th>Calories</th>
-              <td>0</td>
+              <td id="totalCalories">0</td>
             </tr>
           </table>
         </div>

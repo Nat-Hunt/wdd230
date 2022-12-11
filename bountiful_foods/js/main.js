@@ -5,3 +5,11 @@ function toggleMenu() {
 }
 
 document.getElementById("hamburgerBtn").addEventListener("click", toggleMenu);
+
+if (document.getElementById("totalCreatedDrinks")) {
+  let createdDrinks = localStorage.getItem("createdDrinks");
+  if (!createdDrinks) {
+    createdDrinks = 0;
+  }
+  document.getElementById("totalCreatedDrinks").innerHTML = createdDrinks;
+}
