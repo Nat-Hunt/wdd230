@@ -1,0 +1,37 @@
+[
+  {
+    "name": "drink1",
+    "rating": 4,
+    "src": "./images/300x400_placeholder.png"
+  },
+  {
+    "name": "drink2",
+    "rating": 3,
+    "src": "./images/300x400_placeholder.png"
+  },
+  {
+    "name": "drink3",
+    "rating": 5,
+    "src": "./images/300x400_placeholder.png"
+  },
+  {
+    "name": "drink4",
+    "rating": 4.5,
+    "src": "./images/300x400_placeholder.png"
+  },
+  {
+    "name": "drink5",
+    "rating": 4.5,
+    "src": "./images/300x400_placeholder.png"
+  },
+  {
+    "name": "drink6",
+    "rating": 3,
+    "src": "./images/300x400_placeholder.png"
+  },
+  {
+    "name": "drink7",
+    "rating": 3,
+    "src": "./images/300x400_placeholder.png"
+  }
+]

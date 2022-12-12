@@ -1,76 +1,56 @@
-@media only screen and (min-width: 35rem) {
-    /* dynamic content hiding/displaying */
+@media only screen and (min-width: 43rem) {
+  /* Header Styles */
+  header .logo {
+    grid-row: 1 / 3;
+  }
+  header h1 {
+    justify-self: center;
+  }
+  #contactInfo {
+    grid-column: 2 / 3;
+  }
   
-    /* Header Styles */
-    header .logo {
-      grid-row: 1 / 3;
-    }
-    header h1 {
-      justify-self: center;
-    }
-    #contactInfo {
-      grid-column: 2 / 3;
-    }
-
-/* Navigation Bar Styles */
-#navigation {
-  display: flex;
-}
-#navigation li:nth-child(1), #navigation li:nth-child(2) {
-  border-right: 1px solid black;
-}
-
-a.navLink {
-  border: 0;
-  width: 100%;
-}
-
-/* hamburger menu */
-#hamburgerBtn {
-  display: none;
-}
-
-/* Home Page Styles */
-#weather {
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#threeDayForecast {
-  padding-left: 1rem;
-  border-left: 1px solid black;
-}
-#makeyourdrink {
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-}
-
-
-/* Fresh Drinks Styles */
-#drinkCreation {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-}
-#drinkCreationForm {
-  grid-template-columns: 1fr;
-}
-
-/* About Us Styles */
-#contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-/* Class Styles */
-.contentBlock {
-  border: 1px solid black;
-  align-content: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: rgba(var(--primary-color-rgb), .2);
-}
-
-/* ID Styles */
+  /* Home Page Styles */
+  #weather {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #threeDayForecast {
+    padding-left: 1rem;
+    border-left: 1px solid black;
+  }
+  #makeyourdrink {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  
+  
+  /* Fresh Drinks Styles */
+  #drinkCreation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  #drinkCreationForm {
+    grid-template-columns: 1fr;
+  }
+  
+  /* About Us Styles */
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Class Styles */
+  .contentBlock {
+    border: 1px solid black;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(var(--primary-color-rgb), .2);
+  }
+  
+  /* ID Styles */
 
 }
