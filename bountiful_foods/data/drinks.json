@@ -1,37 +1,44 @@
 [
   {
-    "name": "drink1",
+    "name": "Raspberry Delight",
     "rating": 4,
-    "src": "./images/300x400_placeholder.png"
+    "src": "./images/raspberryDelight.jpg",
+    "imageAttribution": "https://pxhere.com/en/photo/694895"
   },
   {
-    "name": "drink2",
-    "rating": 3,
-    "src": "./images/300x400_placeholder.png"
-  },
-  {
-    "name": "drink3",
+    "name": "Strawberry Kiwi Milkshake",
     "rating": 5,
-    "src": "./images/300x400_placeholder.png"
+    "src": "./images/strawberry_kiwi_milkshake.jpg",
+    "imageAttribution": "https://www.hippopx.com/en/query?q=milkshake"
   },
   {
-    "name": "drink4",
+    "name": "Apples to Oranges",
     "rating": 4.5,
-    "src": "./images/300x400_placeholder.png"
+    "src": "./images/applesAndOranges.jpg",
+    "imageAttribution": "https://pxhere.com/en/photo/654142"
   },
   {
-    "name": "drink5",
+    "name": "Dark Chocolate Delight",
     "rating": 4.5,
-    "src": "./images/300x400_placeholder.png"
+    "src": "./images/chocolateSmoothie.jpg",
+    "imageAttribution": "https://www.stockvault.net/photo/197238/chocolate-smoothie"
   },
   {
-    "name": "drink6",
+    "name": "Fruit Cocktail",
     "rating": 3,
-    "src": "./images/300x400_placeholder.png"
+    "src": "./images/fruitCocktail.jpg",
+    "imageAttribution": "https://pixnio.com/media/apples-beverage-drink-food-fruit-cocktail"
   },
   {
-    "name": "drink7",
+    "name": "Strawberry Smoothie",
     "rating": 3,
-    "src": "./images/300x400_placeholder.png"
+    "src": "./images/strawberrySmoothie.jpg",
+    "imageAttribution": "https://commons.wikimedia.org/wiki/File:Strawberry_Smoothie.jpg"
+  },
+  {
+    "name": "Kiwi Surprise",
+    "rating": 3,
+    "src": "./images/kiwi_surprise.jpg",
+    "imageAttribution": "https://www.flickr.com/photos/30478819@N08/50778357537"
   }
 ]
