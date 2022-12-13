@@ -161,6 +161,9 @@ footer div address a {
     display: inline-block;
     margin:5px;
 }
+.menu li img {
+    max-width: 300px;
+}
 .menu li h3, .rating {
     width: 50%;
     margin-left: auto;
