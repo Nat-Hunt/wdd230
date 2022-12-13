@@ -25,8 +25,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/fill-footer.js" defer></script>
-    <script src="./js/fresh-drinks.js" defer></script>
-    <script src="./js/load-menu.js" defer></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -38,18 +36,16 @@
           class="logo"
         />
       </a>
-      <h1>Fresh Drinks</h1>
+      <h1>Resources</h1>
       <nav>
         <section>
           <button id="hamburgerBtn">
             <span>&#9776; Menu</span><span>X Close</span>
           </button>
           <ul id="navigation">
-            <li><a class="navLink" href="./index.html">Home</a></li>
-            <li class="active">
-              <a class="navLink" href="./fresh.html">Fresh</a>
-            </li>
-            <li><a class="navLink" href="./about_us.html">About Us</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./fresh.html">Fresh</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
           </ul>
         </section>
         <section id="socialMediaLinks">
@@ -75,70 +71,46 @@
       </nav>
     </header>
 
-    <main id="fresh">
-      <div class="contentBlock" id="customDrinksGreeting">
-        <h2>Make your own drink!</h2>
-        <p>Total created drinks: <span id="totalCreatedDrinks"></span></p>
-      </div>
-
-      <div class="contentBlock" id="drinkCreation">
-        <form id="drinkCreationForm" action="./#" method="get">
-          <h3>Contact Info</h3>
-          <label for="fname">First Name</label>
-          <input id="fname" name="fname" placeholder="First Name" required />
-
-          <label for="userPhone">Cell Phone</label>
-          <input
-            id="userPhone"
-            name="userPhone"
-            placeholder="(123) 456-789"
-            required
-          />
-
-          <label for="userEmail">Email</label>
-          <input
-            id="userEmail"
-            name="userEmail"
-            placeholder="your-email@email.com"
-            required
-          />
-          <h3>Select your ingredients:</h3>
-          <select id="product1" name="product1"></select>
-          <select id="product2" name="product2"></select>
-          <select id="product3" name="product3"></select>
-
-          <button type="submit" id="drinkCreationBtn">Submit</button>
-        </form>
-
-        <div id="nutritionFacts">
-          <h2>Nutrition Facts</h2>
-          <table>
-            <tr>
-              <th>Carbohydrates</th>
-              <td id="totalCarbs">0</td>
-            </tr>
-            <tr>
-              <th>Protein</th>
-              <td id="totalProtein">0</td>
-            </tr>
-            <tr>
-              <th>Fat</th>
-              <td id="totalFat">0</td>
-            </tr>
-            <tr>
-              <th>Sugar</th>
-              <td id="totalSugar">0</td>
-            </tr>
-            <tr>
-              <th>Calories</th>
-              <td id="totalCalories">0</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="contentBlock healthDrinkMenu">
-        <ul id="menu" class="menu"></ul>
-      </div>
+    <main>
+      <ul>
+        <h2>Drink menu images</h2>
+        <li>
+          <a href="https://pxhere.com/en/photo/694895"
+            >https://pxhere.com/en/photo/694895</a
+          >
+        </li>
+        <li>
+          <a href="https://www.hippopx.com/en/query?q=milkshake"
+            >https://www.hippopx.com/en/query?q=milkshake</a
+          >
+        </li>
+        <li>
+          <a href="https://pxhere.com/en/photo/654142"></a
+          >https://pxhere.com/en/photo/654142
+        </li>
+        <li>
+          <a
+            href="https://www.stockvault.net/photo/197238/chocolate-smoothie"
+          ></a
+          >https://www.stockvault.net/photo/197238/chocolate-smoothie
+        </li>
+        <li>
+          <a
+            href="https://pixnio.com/media/apples-beverage-drink-food-fruit-cocktail"
+          ></a
+          >https://pixnio.com/media/apples-beverage-drink-food-fruit-cocktail
+        </li>
+        <li>
+          <a
+            href="https://commons.wikimedia.org/wiki/File:Strawberry_Smoothie.jpg"
+          ></a
+          >https://commons.wikimedia.org/wiki/File:Strawberry_Smoothie.jpg
+        </li>
+        <li>
+          <a href="https://www.flickr.com/photos/30478819@N08/50778357537"></a
+          >https://www.flickr.com/photos/30478819@N08/50778357537
+        </li>
+      </ul>
     </main>
 
     <footer>
@@ -159,7 +131,6 @@
         <span id="year"></span>
         <span id="last-update"></span>
       </div>
-      <span id="resources"><a href="./resources.html">Resources</a></span>
     </footer>
   </body>
 </html>
