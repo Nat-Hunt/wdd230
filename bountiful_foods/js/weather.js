@@ -1,7 +1,7 @@
 // current conditions fields
 const currentTemp = document.getElementById("temp");
 const weatherIcon = document.getElementById("weather-icon");
-const captionDesc = document.querySelector("figcaption");
+const captionDesc = document.getElementById("todayFig");
 const humidity = document.getElementById("humidity");
 const feelsLike = document.getElementById("feelsLike");
 

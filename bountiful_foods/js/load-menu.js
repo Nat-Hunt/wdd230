@@ -40,3 +40,9 @@ function createMenuItem(drink) {
   li.appendChild(ratingSection);
   menu.appendChild(li);
 }
+
+if (document.getElementById("makeYourDrinkBtn")) {
+  document.getElementById("makeYourDrinkBtn").addEventListener("click", () => {
+    window.location.href = "./fresh.html";
+  });
+}
