@@ -38,6 +38,14 @@ p, li, span, label, input, th, td, option, a {
     font-family: var(--paragraph-font);
 }
 
+button {
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -46,23 +54,21 @@ ul {
 /* Header Styles */
 header {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: .4fr 1fr;
     grid-gap: 10px;
     background-color: var(--accent-color-1);
     padding: 1rem;
 }
-#contactInfo {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+header img, header h1 {
+    justify-self: center;
+    align-self: center;
 }
 /* Navigation Bar Styles */
 nav {
     background-color: rgba(var(--accent-color-2-rgb), .5);
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
 }
 nav button {
@@ -119,11 +125,14 @@ nav ul.open {display: block;}
     justify-self: end;
     margin-right: 1rem;
 }
+.fa-2xl {
+    padding: 1rem;
+}
 
 /* Footer Styles */
 footer {
     display: grid;
-    grid-template-columns: 1fr 150px;
+    grid-template-columns: 1fr 1fr;
     background-color: var(--accent-color-1);
     padding: 1rem
 }
@@ -133,6 +142,9 @@ footer .logo {
 #baseFooter {
     grid-column: 1 / -1;
     padding-top: 1rem;
+}
+footer div address a {
+    color: black;
 }
 
 /* Drink Menu Styles */
@@ -196,7 +208,7 @@ footer .logo {
   }
   #drinkCreationForm {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
   #nutritionFacts {
@@ -210,8 +222,21 @@ footer .logo {
 
 .contactForm {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
     padding: 1rem;
   }
+.contactForm h2 {
+    grid-column: 1 / -1;
+}
+#comments_questions {
+    grid-column: 1 / -1;
+    height: 150px;
+}
+.contactForm button {
+    grid-column: 1 / -1;
+    padding: .5rem;
+}
 /* Class Styles */
 .logo {
     max-width: 100%;

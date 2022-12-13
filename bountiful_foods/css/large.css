@@ -1,5 +1,8 @@
 @media only screen and (min-width: 64rem){
   /* Navigation Bar Styles */
+  nav {
+    grid-template-columns: 300px 1fr;
+  }
   #navigation {
     display: flex;
   }

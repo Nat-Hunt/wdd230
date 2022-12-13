@@ -39,12 +39,6 @@
         />
       </a>
       <h1>Fresh Drinks</h1>
-      <span id="contactInfo">
-        <a href="tel:1234567890">(123) 456-7890</a>
-        <a href="mailto:email_us@bountifulemail.com"
-          >email_us@bountifulemail.com</a
-        >
-      </span>
       <nav>
         <section>
           <button id="hamburgerBtn">
@@ -89,19 +83,26 @@
 
       <div class="contentBlock" id="drinkCreation">
         <form id="drinkCreationForm" action="./#" method="get">
+          <h3>Contact Info</h3>
+          <label for="fname">First Name</label>
           <input id="fname" name="fname" placeholder="First Name" required />
+
+          <label for="userPhone">Cell Phone</label>
           <input
             id="userPhone"
             name="userPhone"
             placeholder="(123) 456-789"
             required
           />
+
+          <label for="userEmail">Email</label>
           <input
             id="userEmail"
             name="userEmail"
             placeholder="your-email@email.com"
             required
           />
+          <h3>Select your ingredients:</h3>
           <select id="product1" name="product1"></select>
           <select id="product2" name="product2"></select>
           <select id="product3" name="product3"></select>

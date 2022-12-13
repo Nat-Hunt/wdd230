@@ -38,12 +38,6 @@
         />
       </a>
       <h1>About Us</h1>
-      <span id="contactInfo">
-        <a href="tel:1234567890">(123) 456-7890</a>
-        <a href="mailto:email_us@bountifulemail.com"
-          >email_us@bountifulemail.com</a
-        >
-      </span>
       <nav>
         <section>
           <button id="hamburgerBtn">
@@ -151,20 +145,30 @@
           method="get"
         >
           <h2>Contact Us</h2>
+          <label for="fname">First Name</label>
           <input id="fname" name="fname" placeholder="First Name" require />
+
+          <label for="userPhone">Cell Phone</label>
           <input id="userPhone" name="userPhone" placeholder="(123) 456-789" />
+
+          <label for="userEmail">Email</label>
           <input
             id="userEmail"
             name="userEmail"
             placeholder="your-email@email.com"
           />
+
+          <label for="preference">Contact Preference</label>
           <select name="preference" aria-placeholder="Preferred contact method">
             <option value="none">Preferred contact method</option>
             <option value="phone">Phone</option>
             <option value="email">Email</option>
           </select>
+
+          <label for="comments_questions">Questions and Comments</label>
           <textarea
-            name="comments/questions"
+            name="comments_questions"
+            id="comments_questions"
             placeholder="Your comments or questions..."
           ></textarea>
 
